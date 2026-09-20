@@ -1,0 +1,29 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.13"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "gridplan"
+version = "0.1.0"
+description = "Graph-search planner benchmark on 2D/3D grids (C++ core with Python bindings)"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.12",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+viz3d = [
+  "open3d>=0.18",
+]
+
+[tool.scikit-build]
+wheel.install-dir = "gridplan"
+build-dir = "build/{wheel_tag}"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

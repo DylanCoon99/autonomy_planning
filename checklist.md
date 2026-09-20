@@ -4,14 +4,14 @@
 
 ## Day 1: Toolchain
 
-- [ ] Create top-level directory structure (`cpp/`, `bindings/`, `python/gridplan/`, `benchmarks/`, `tests/`)
-- [ ] Write `CMakeLists.txt` with FetchContent for pybind11, GoogleTest, Google Benchmark
-- [ ] Write `CMakePresets.json` (debug, release, asan-ubsan presets)
-- [ ] Write `pyproject.toml` with scikit-build-core configuration
-- [ ] Create a trivial pybind11 function (e.g., `add(a, b)`)
+- [x] Create top-level directory structure (`cpp/`, `bindings/`, `python/gridplan/`, `benchmarks/`, `tests/`)
+- [x] Write `CMakeLists.txt` with FetchContent for pybind11, GoogleTest, Google Benchmark
+- [x] Write `CMakePresets.json` (debug, release, asan-ubsan presets)
+- [x] Write `pyproject.toml` with scikit-build-core configuration
+- [x] Create a trivial pybind11 function (e.g., `add(a, b)`)
 - [ ] Verify `pip install -e .` builds and installs successfully
 - [ ] Call the trivial binding from Python to confirm it works
-- [ ] Wire in GoogleTest with a placeholder test
+- [x] Wire in GoogleTest with a placeholder test
 - [ ] Confirm `ctest` runs the placeholder test successfully
 
 ---

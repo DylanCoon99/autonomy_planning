@@ -1,0 +1,481 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Git::Git::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Git__Git-Release-7f703e621b1aac9109ac.json",
+					"name" : "Git::Git",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Threads::Threads::@dd9d8aa9ce2e501a39fe",
+					"jsonFile" : "target-Threads__Threads-Release-70644349ce21f9d6622d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Threads::Threads::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-Threads__Threads-Release-36ce53cff4d41fd0d838.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-Threads__Threads-Release-2f8a10f4feedad439112.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::_ClassicPythonLibraries::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11___ClassicPythonLibraries-Release-8d5b286efa76d504d888.json",
+					"name" : "pybind11::_ClassicPythonLibraries",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::embed::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__embed-Release-6b225bef638a2e8bfb71.json",
+					"name" : "pybind11::embed",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::lto::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__lto-Release-2218edddacb1eca35750.json",
+					"name" : "pybind11::lto",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::module::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__module-Release-15acbc0001d595f192b0.json",
+					"name" : "pybind11::module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::opt_size::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__opt_size-Release-8e464ca60033ce4448fe.json",
+					"name" : "pybind11::opt_size",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::pybind11::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__pybind11-Release-5eefe93e92bceff7d95e.json",
+					"name" : "pybind11::pybind11",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::python_headers::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__python_headers-Release-5f2efc103ac886ed067a.json",
+					"name" : "pybind11::python_headers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::python_link_helper::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__python_link_helper-Release-cb1755ef2b6cc7bfbe7e.json",
+					"name" : "pybind11::python_link_helper",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::thin_lto::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__thin_lto-Release-d913235f1b41ab5073aa.json",
+					"name" : "pybind11::thin_lto",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11::windows_extras::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11__windows_extras-Release-5d9857aa1179cd05004c.json",
+					"name" : "pybind11::windows_extras",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pybind11_headers::@1ce1e7db1c911fd22b77",
+					"jsonFile" : "target-pybind11_headers-Release-035aebc1acad08abc6ac.json",
+					"name" : "pybind11_headers",
+					"projectIndex" : 1
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-c54a34251278a5e015f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6,
+						9,
+						10
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					],
+					"build" : "_deps/pybind11-build",
+					"jsonFile" : "directory-_deps.pybind11-build-Release-2bb0beedfe15c831d855.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/pybind11-src"
+				},
+				{
+					"build" : "_deps/googletest-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build-Release-5fca8de1fe3196c89ce6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"build" : "_deps/googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googlemock-Release-f4b1185c0fc4798c6205.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "_deps/googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googletest-build.googletest-Release-6c48247758a22a2fc7fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"build" : "_deps/googlebenchmark-build",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googlebenchmark-build-Release-b11f38e42bb7ceaa1bf6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src"
+				},
+				{
+					"build" : "_deps/googlebenchmark-build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.googlebenchmark-build.src-Release-6dfd10cde27b119b34df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 5,
+					"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/src",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"childIndexes" : 
+					[
+						1,
+						2,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gridplan",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6,
+						9,
+						10
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "pybind11",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						2
+					],
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "benchmark",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "_gridplan_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-_gridplan_core-Release-cb473a71ee963f3d91a3.json",
+					"name" : "_gridplan_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bench_planners::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bench_planners-Release-d8f609de48e22f0a79be.json",
+					"name" : "bench_planners",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "benchmark::@a5e768fe43450e220d4b",
+					"jsonFile" : "target-benchmark-Release-518a919627a20ec82cbb.json",
+					"name" : "benchmark",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "benchmark_main::@a5e768fe43450e220d4b",
+					"jsonFile" : "target-benchmark_main-Release-a3cefaecb58cee36c9a0.json",
+					"name" : "benchmark_main",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock-Release-f557c119bc4cbb1c7e95.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main::@0f7bb11d64f3678238c7",
+					"jsonFile" : "target-gmock_main-Release-6d9964238368d8d2a7ae.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gridplan_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gridplan_core-Release-b57f22f498324363d291.json",
+					"name" : "gridplan_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest-Release-0ac3f651ddb7b907c94e.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+					"jsonFile" : "target-gtest_main-Release-392b8e078fe483d0f000.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_grid::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_grid-Release-4dbd0bd12dcd0af3bbd1.json",
+					"name" : "test_grid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_planners::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_planners-Release-e1aa12850e7a6f1d5986.json",
+					"name" : "test_planners",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64",
+		"source" : "/Users/Dylan/Documents/autonomy_planning/gridplan"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

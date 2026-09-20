@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/pybind11-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

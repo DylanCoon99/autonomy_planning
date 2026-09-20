@@ -1,0 +1,12 @@
+prefix=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpglrkmzzc/wheel/platlib/gridplan
+exec_prefix=${prefix}
+libdir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpglrkmzzc/wheel/platlib/gridplan/lib
+includedir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpglrkmzzc/wheel/platlib/gridplan/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: 1.9.1
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread 
+Cflags: -I${includedir}

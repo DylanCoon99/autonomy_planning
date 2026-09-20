@@ -1,0 +1,8 @@
+{
+  "source_dir": "/Users/Dylan/Documents/autonomy_planning/gridplan",
+  "build_dir": "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64",
+  "cmake_path": "/opt/homebrew/bin/cmake",
+  "skbuild_path": "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-3ak4s3im/overlay/lib/python3.13/site-packages/scikit_build_core",
+  "skbuild_version": "1.0.3",
+  "python_executable": "/Users/Dylan/anaconda3/bin/python3.13"
+}

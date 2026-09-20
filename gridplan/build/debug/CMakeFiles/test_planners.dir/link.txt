@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_planners.dir/cpp/tests/test_planners.cpp.o -o test_planners  libgridplan_core.a lib/libgtest_main.a lib/libgtest.a

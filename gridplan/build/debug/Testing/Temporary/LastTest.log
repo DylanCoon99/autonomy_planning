@@ -1,0 +1,55 @@
+Start testing: Sep 20 14:41 EDT
+----------------------------------------------------------
+1/2 Testing: test_grid
+1/2 Test: test_grid
+Command: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/test_grid"
+Directory: /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug
+"test_grid" start time: Sep 20 14:41 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GridTest
+[ RUN      ] GridTest.Placeholder
+[       OK ] GridTest.Placeholder (0 ms)
+[----------] 1 test from GridTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"test_grid" end time: Sep 20 14:41 EDT
+"test_grid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_planners
+2/2 Test: test_planners
+Command: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/test_planners"
+Directory: /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug
+"test_planners" start time: Sep 20 14:41 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PlannersTest
+[ RUN      ] PlannersTest.Placeholder
+[       OK ] PlannersTest.Placeholder (0 ms)
+[----------] 1 test from PlannersTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_planners" end time: Sep 20 14:41 EDT
+"test_planners" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 20 14:41 EDT

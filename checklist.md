@@ -10,9 +10,9 @@
 - [x] Write `pyproject.toml` with scikit-build-core configuration
 - [x] Create a trivial pybind11 function (e.g., `add(a, b)`)
 - [x] Verify `pip install -e .` builds and installs successfully
-- [ ] Call the trivial binding from Python to confirm it works
+- [x] Call the trivial binding from Python to confirm it works
 - [x] Wire in GoogleTest with a placeholder test
-- [ ] Confirm `ctest` runs the placeholder test successfully
+- [x] Confirm `ctest` runs the placeholder test successfully
 
 ---
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -bundle -Wl,-headerpad_max_install_names -Xlinker -undefined -Xlinker dynamic_lookup -o _gridplan_core.cpython-313-darwin.so CMakeFiles/_gridplan_core.dir/bindings/module.cpp.o  libgridplan_core.a

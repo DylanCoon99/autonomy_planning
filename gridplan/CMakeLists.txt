@@ -45,7 +45,7 @@ target_compile_features(gridplan_core PUBLIC cxx_std_20)
 # ---------- pybind11 module ----------
 pybind11_add_module(_gridplan_core bindings/module.cpp)
 target_link_libraries(_gridplan_core PRIVATE gridplan_core)
-install(TARGETS _gridplan_core DESTINATION gridplan)
+install(TARGETS _gridplan_core DESTINATION .)
 
 # ---------- GoogleTest ----------
 enable_testing()

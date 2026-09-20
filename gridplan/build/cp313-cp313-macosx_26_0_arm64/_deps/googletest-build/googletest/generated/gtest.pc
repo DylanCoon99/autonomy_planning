@@ -1,5 +1,5 @@
-libdir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpglrkmzzc/wheel/platlib/gridplan/lib
-includedir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpglrkmzzc/wheel/platlib/gridplan/include
+libdir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan/lib
+includedir=/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan/include
 
 Name: gtest
 Description: GoogleTest (without main() function)

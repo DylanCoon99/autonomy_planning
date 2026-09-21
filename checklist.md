@@ -18,11 +18,11 @@
 
 ## Day 2: Python Reference and Environment Generation
 
-- [ ] Implement seeded environment generation in `envgen.py`
-  - [ ] Uniform random obstacles
+- [x] Implement seeded environment generation in `envgen.py`
+  - [x] Uniform random obstacles
   - [ ] Random box obstacles
   - [ ] 2D maze generator
-- [ ] Implement obstacle inflation with `scipy.ndimage.binary_dilation`
+- [x] Implement obstacle inflation with `scipy.ndimage.binary_dilation`
 - [ ] Guarantee free start and goal cells; reject unreachable configurations
 - [ ] Implement pure-Python Dijkstra in `reference.py`
 - [ ] Implement pure-Python A* in `reference.py`

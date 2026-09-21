@@ -50,32 +50,46 @@ class Environment:
     
         self._obstacle_density = value
     
-    
     def _create_grid(self):
-        # TODO: method to create a grid
         # implement grid as a numpy array with 0 representing free cell and 1 representing an obstacle
+        
         rows, cols = self.dimensions[0], self.dimensions[1]
         n_cells = rows * cols
         n_obstacles = int(n_cells * self.obstacle_density)
-        grid = np.zeros(n_cells, dtype=np.uint8)
-        grid[:n_obstacles] = 1
-        rng.shuffle(grid)
-        grid = grid.reshape((rows, cols))
         
+        valid_grid = False
         
-        # set start and target randomly
+        while (not valid_grid):
+            grid = np.zeros(n_cells, dtype=np.uint8)
+            grid[:n_obstacles] = 1
+            self.rng.shuffle(grid)
+            grid = grid.reshape((rows, cols))
+            
+            # TODO: obstacle inflation
+            
+            
+            # TODO: set the start and target
+            self.start = np.unravel_index(np.argmin(grid != 0), grid.shape)
+            idx = (grid == 0).size - 1 - np.argmax((grid == 0).flat[::-1])
+            self.target = np.unravel_index(idx, grid.shape)
+            
+            valid_grid = self._validate_grid(grid, self.start, self.target)
+            
         
         return grid
         
     def print_grid(self):
     
+        print(f"Start: {self.start}")
+        print(f"Target: {self.target}")
+    
         print("Printing grid...")
         print(self.grid)
         
 
-    def _validate_grid(self, grid, start, target):
+    def _validate_grid(self, grid, start, target) -> bool:
         # TODO: validates the target is reachable from the start
-        pass
+        return True
 
 
 

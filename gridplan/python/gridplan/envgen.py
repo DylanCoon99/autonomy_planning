@@ -4,15 +4,22 @@ from scipy import ndimage
 
 class Environment:
 
-    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int, obstacle_inflation=False):
+    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int, setting="uniform", obstacle_inflation=False):
         self.dimensions = dimensions
         self.obstacle_density = obstacle_density
         self.rng = np.random.default_rng(seed=seed)
         self.start = None
         self.target = None
         self.obstacle_inflation = obstacle_inflation
-        self.grid = self._create_grid()  # np.ndarray of uint8
-        
+        match setting:
+            case "uniform":
+                self.grid = self._create_grid_uniform()
+            case "box":
+                self.grid = self._create_grid_box()
+            case "maze":
+                self.grid = self._create_grid_maze()
+            case _:
+                raise ValueError(f"Invalid setting: {setting} Choose 'uniform', 'box', or 'maze' for the environment setting.")
 
     @property
     def dimensions(self) -> tuple[int, int]:
@@ -53,7 +60,7 @@ class Environment:
     
         self._obstacle_density = value
     
-    def _create_grid(self):
+    def _create_grid_uniform(self):
         # implement grid as a numpy array with 0 representing free cell and 1 representing an obstacle
         
         rows, cols = self.dimensions[0], self.dimensions[1]
@@ -68,15 +75,9 @@ class Environment:
             self.rng.shuffle(grid)
             grid = grid.reshape((rows, cols))
 
-            print("Printing grid before obstacle inflation...")
-            print(grid)
-            
             if self.obstacle_inflation:
                 # TODO: obstacle inflation
                 grid = (ndimage.binary_dilation(grid)).astype(int)
-            
-            print("Printing grid after obstacle inflation...")
-            print(grid)
             
             # TODO: set the start and target
             self.start = np.unravel_index(np.argmin(grid != 0), grid.shape)
@@ -87,6 +88,22 @@ class Environment:
             
         return grid
         
+
+    def _create_grid_box(self):
+
+        return
+
+
+    def _create_grid_maze(self):
+
+        return
+    
+
+    def _validate_grid(self, grid, start, target) -> bool:
+        # TODO: validates the target is reachable from the start
+        return True
+
+
     def print_grid(self):
     
         print(f"Start: {self.start}")
@@ -94,12 +111,6 @@ class Environment:
     
         print("Printing grid...")
         print(self.grid)
-        
-
-    def _validate_grid(self, grid, start, target) -> bool:
-        # TODO: validates the target is reachable from the start
-        return True
-
 
 
 def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int, obstacle_inflation=False):

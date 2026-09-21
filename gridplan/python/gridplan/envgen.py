@@ -1,16 +1,19 @@
 import numpy as np
+from scipy import ndimage
 
 
 class Environment:
 
-    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int):
+    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int, obstacle_inflation=False):
         self.dimensions = dimensions
         self.obstacle_density = obstacle_density
         self.rng = np.random.default_rng(seed=seed)
         self.start = None
         self.target = None
+        self.obstacle_inflation = obstacle_inflation
         self.grid = self._create_grid()  # np.ndarray of uint8
-    
+        
+
     @property
     def dimensions(self) -> tuple[int, int]:
         return self._dimensions
@@ -64,9 +67,16 @@ class Environment:
             grid[:n_obstacles] = 1
             self.rng.shuffle(grid)
             grid = grid.reshape((rows, cols))
+
+            print("Printing grid before obstacle inflation...")
+            print(grid)
             
-            # TODO: obstacle inflation
+            if self.obstacle_inflation:
+                # TODO: obstacle inflation
+                grid = (ndimage.binary_dilation(grid)).astype(int)
             
+            print("Printing grid after obstacle inflation...")
+            print(grid)
             
             # TODO: set the start and target
             self.start = np.unravel_index(np.argmin(grid != 0), grid.shape)
@@ -75,7 +85,6 @@ class Environment:
             
             valid_grid = self._validate_grid(grid, self.start, self.target)
             
-        
         return grid
         
     def print_grid(self):
@@ -93,6 +102,6 @@ class Environment:
 
 
 
-def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int):
+def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int, obstacle_inflation=False):
     # creates an environment for the provided parameters
-    return Environment(dimensions, obstacle_density, seed)
+    return Environment(dimensions, obstacle_density, seed, obstacle_inflation=obstacle_inflation)

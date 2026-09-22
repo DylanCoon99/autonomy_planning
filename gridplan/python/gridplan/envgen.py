@@ -1,5 +1,6 @@
 import numpy as np
 from scipy import ndimage
+from collections import deque
 
 
 class Environment:
@@ -97,11 +98,61 @@ class Environment:
     def _create_grid_maze(self):
 
         return
-    
 
-    def _validate_grid(self, grid, start, target) -> bool:
+    def get_neighbors(self, grid, node: tuple[int, int]):
+
+        # each node has up to 4 reachable neighbors
+        # up, down, left, right
+        neighbors = []
+        max_row, max_col = grid.shape
+
+        # check each to make sure they are not out of bounds and they are equal to 0
+        if node[0] > 0:
+            # up is reachable
+            idx, idy = node[0] - 1, node[1]
+            if grid[idx][idy] == 0:
+                neighbors.append((idx, idy))
+        if node[0] != max_row - 1:
+            # down is reachable
+            idx, idy = node[0] + 1, node[1]
+            if grid[idx][idy] == 0:
+                neighbors.append((idx, idy))
+        if node[1] > 0:
+            # left is reachable
+            idx, idy = node[0], node[1] - 1
+            if grid[idx][idy] == 0:
+                neighbors.append((idx, idy))
+        if node[1] != max_col - 1:
+            # left is reachable
+            idx, idy = node[0], node[1] + 1
+            if grid[idx][idy] == 0:
+                neighbors.append((idx, idy))
+
+        return neighbors
+
+
+    def _validate_grid(self, grid: tuple[int, int], start: tuple[int, int], target) -> bool:
         # TODO: validates the target is reachable from the start
-        return True
+        visited = set()
+        stack = deque([start])
+
+        visited.add(start)
+
+        while len(stack) > 0:
+            # pop top node from the stack
+            node = stack.pop()
+
+            # get reachable neighbors for a node
+            neighbors = self.get_neighbors(grid, node)
+
+            # add the node's neighbors to the stack if not already in visited
+            for neighbor in neighbors:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    stack.append(neighbor)
+
+        # check to see if target is in visite
+        return target in visited
 
 
     def print_grid(self):
@@ -116,3 +167,4 @@ class Environment:
 def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int, obstacle_inflation=False):
     # creates an environment for the provided parameters
     return Environment(dimensions, obstacle_density, seed, obstacle_inflation=obstacle_inflation)
+

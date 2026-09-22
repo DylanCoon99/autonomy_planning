@@ -96,7 +96,66 @@ def dijkstra(grid, start, target):
 	return Result(cost, n_nodes_expanded, path)
 
 
+def manhattan_distance(node1, node2):
+	return abs(node1[0] - node2[0]) + abs(node1[1] - node2[1])
+
 
 def a_star(grid, start, target):
+
+	# f(n) = g(n) + h(n)
+	# g(n): actual cost from current node to starting node
+	# h(n): heuristic cost (estimates the remaining distance to the target node)
+	# use manhattan distance for heuristic
+
+
+	# need to remember that not all nodes are free; some are obstacles
+	# -> use get_neighbors to get reachable nodes
+
+	# store the unvisited nodes in a priority queue: heapq minheap
+	distances = {(row, col): float('inf') for (row, col), value in np.ndenumerate(grid)}
+	distances[start] = 0
+
+	# use a dictionary to track the parent for each node
+	parents = dict()
+	parents[start] = None
+
+	priority_queue = [(0, start)] 
+	heapq.heapify(priority_queue)
+	n_nodes_expanded = 0
+
+	while priority_queue:
+		# pop from priority queue -> smallest cost node
+		cost, node = heapq.heappop(priority_queue)
+
+		n_nodes_expanded += 1
+
+		if cost > distances[node]:
+			continue
+
+		# find cost from this node to all of it's neighbors
+		neighbors = get_neighbors(grid, node)
+
+		for neighbor in neighbors:
+			# check if the cost for each neighbor is less than the current cost for the node
+			new_cost = cost + 1 + manhattan_distance(node, neighbor)
+			if new_cost < distances[neighbor]:
+				distances[neighbor] = new_cost
+				parents[neighbor] = node
+				heapq.heappush(priority_queue, (new_cost, neighbor))
+
+
+	# form the path list for the shortest path
+	path = []
+
+	parent = target
+	while parent != None:
+		path.append(parent)
+		parent = parents[parent]
+
+	path.reverse()
+	cost = len(path) - 1
+
+	return Result(cost, n_nodes_expanded, path)
+
 
 	return None

@@ -25,8 +25,8 @@
 - [x] Implement obstacle inflation with `scipy.ndimage.binary_dilation`
 - [x] Guarantee free start and goal cells; reject unreachable configurations
 - [x] Implement pure-Python Dijkstra in `reference.py`
-- [ ] Implement pure-Python A* in `reference.py`
-- [ ] Write basic tests for environment generation and reference planners
+- [x] Implement pure-Python A* in `reference.py`
+- [x] Write basic tests for environment generation and reference planners
 
 ---
 

@@ -20,8 +20,7 @@
 
 - [x] Implement seeded environment generation in `envgen.py`
   - [x] Uniform random obstacles
-  - [ ] Random box obstacles
-  - [ ] 2D maze generator
+  - [x] Random box obstacles
 - [x] Implement obstacle inflation with `scipy.ndimage.binary_dilation`
 - [x] Guarantee free start and goal cells; reject unreachable configurations
 - [x] Implement pure-Python Dijkstra in `reference.py`

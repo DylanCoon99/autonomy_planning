@@ -17,10 +17,8 @@ class Environment:
 				self.grid = self._create_grid_uniform()
 			case "box":
 				self.grid = self._create_grid_box()
-			case "maze":
-				self.grid = self._create_grid_maze()
 			case _:
-				raise ValueError(f"Invalid setting: {option} Choose 'uniform', 'box', or 'maze' for the environment setting.")
+				raise ValueError(f"Invalid setting: {option} Choose 'uniform', or 'box' for the environment setting.")
 
 	@property
 	def dimensions(self) -> tuple[int, int]:
@@ -91,13 +89,35 @@ class Environment:
 
 
 	def _create_grid_box(self):
+		rows, cols = self.dimensions
+		target_obstacles = int(rows * cols * self.obstacle_density)
+		min_side, max_side = 2, max(3, min(rows, cols) // 4)
 
-		return
+		valid_grid = False
 
+		while not valid_grid:
+			grid = np.zeros((rows, cols), dtype=np.uint8)
+			obstacle_count = 0
 
-	def _create_grid_maze(self):
+			while obstacle_count < target_obstacles:
+				h = self.rng.integers(min_side, max_side + 1)
+				w = self.rng.integers(min_side, max_side + 1)
+				r = self.rng.integers(0, rows - h + 1)
+				c = self.rng.integers(0, cols - w + 1)
+				new_cells = int(np.sum(grid[r:r+h, c:c+w] == 0))
+				grid[r:r+h, c:c+w] = 1
+				obstacle_count += new_cells
 
-		return
+			if self.obstacle_inflation:
+				grid = ndimage.binary_dilation(grid).astype(np.uint8)
+
+			self.start = np.unravel_index(np.argmin(grid != 0), grid.shape)
+			idx = (grid == 0).size - 1 - np.argmax((grid == 0).flat[::-1])
+			self.target = np.unravel_index(idx, grid.shape)
+
+			valid_grid = self._validate_grid(grid, self.start, self.target)
+
+		return grid
 
 	def get_neighbors(self, grid, node: tuple[int, int]):
 

@@ -75,11 +75,11 @@ def dijkstra(grid, start, target):
 
 		for neighbor in neighbors:
 			# check if the cost for each neighbor is less than the current cost for the node
-			cost = cost + 1
-			if cost < distances[neighbor]:
-				distances[neighbor] = cost
+			new_cost = cost + 1
+			if new_cost < distances[neighbor]:
+				distances[neighbor] = new_cost
 				parents[neighbor] = node
-				heapq.heappush(priority_queue, (cost, neighbor))
+				heapq.heappush(priority_queue, (new_cost, neighbor))
 
 
 	# form the path list for the shortest path
@@ -94,3 +94,9 @@ def dijkstra(grid, start, target):
 	cost = len(path) - 1
 
 	return Result(cost, n_nodes_expanded, path)
+
+
+
+def a_star(grid, start, target):
+
+	return None

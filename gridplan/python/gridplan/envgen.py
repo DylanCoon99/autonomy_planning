@@ -5,14 +5,14 @@ from collections import deque
 
 class Environment:
 
-    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int, setting="uniform", obstacle_inflation=False):
+    def __init__(self, dimensions: tuple[int, int], obstacle_density: float, seed: int, option="uniform", obstacle_inflation=False):
         self.dimensions = dimensions
         self.obstacle_density = obstacle_density
         self.rng = np.random.default_rng(seed=seed)
         self.start = None
         self.target = None
         self.obstacle_inflation = obstacle_inflation
-        match setting:
+        match option:
             case "uniform":
                 self.grid = self._create_grid_uniform()
             case "box":
@@ -20,7 +20,7 @@ class Environment:
             case "maze":
                 self.grid = self._create_grid_maze()
             case _:
-                raise ValueError(f"Invalid setting: {setting} Choose 'uniform', 'box', or 'maze' for the environment setting.")
+                raise ValueError(f"Invalid setting: {option} Choose 'uniform', 'box', or 'maze' for the environment setting.")
 
     @property
     def dimensions(self) -> tuple[int, int]:
@@ -132,7 +132,7 @@ class Environment:
 
 
     def _validate_grid(self, grid: tuple[int, int], start: tuple[int, int], target) -> bool:
-        # TODO: validates the target is reachable from the start
+        # TODO: validates the target is reachable from the start; uses DFS
         visited = set()
         stack = deque([start])
 
@@ -164,7 +164,7 @@ class Environment:
         print(self.grid)
 
 
-def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int, obstacle_inflation=False):
+def create_environment(dimensions: tuple[int, int], obstacle_density: int, seed: int, option="uniform", obstacle_inflation=False):
     # creates an environment for the provided parameters
-    return Environment(dimensions, obstacle_density, seed, obstacle_inflation=obstacle_inflation)
+    return Environment(dimensions, obstacle_density, seed, option=option, obstacle_inflation=obstacle_inflation)
 

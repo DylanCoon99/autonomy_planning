@@ -58,6 +58,10 @@ add_executable(test_planners cpp/tests/test_planners.cpp)
 target_link_libraries(test_planners PRIVATE gridplan_core GTest::gtest_main)
 add_test(NAME test_planners COMMAND test_planners)
 
+# ---------- Sandbox ----------
+add_executable(sandbox cpp/src/main.cpp)
+target_link_libraries(sandbox PRIVATE gridplan_core)
+
 # ---------- Google Benchmark ----------
 add_executable(bench_planners cpp/bench/bench_planners.cpp)
 target_link_libraries(bench_planners PRIVATE gridplan_core benchmark::benchmark_main)

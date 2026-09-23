@@ -224,6 +224,19 @@ test_planners/fast:
 .PHONY : test_planners/fast
 
 #=============================================================================
+# Target rules for targets named sandbox
+
+# Build rule for target.
+sandbox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox
+.PHONY : sandbox
+
+# fast build rule for target.
+sandbox/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandbox.dir/build.make CMakeFiles/sandbox.dir/build
+.PHONY : sandbox/fast
+
+#=============================================================================
 # Target rules for targets named bench_planners
 
 # Build rule for target.
@@ -458,6 +471,30 @@ cpp/src/grid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridplan_core.dir/build.make CMakeFiles/gridplan_core.dir/cpp/src/grid.cpp.s
 .PHONY : cpp/src/grid.cpp.s
 
+cpp/src/main.o: cpp/src/main.cpp.o
+.PHONY : cpp/src/main.o
+
+# target to build an object file
+cpp/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandbox.dir/build.make CMakeFiles/sandbox.dir/cpp/src/main.cpp.o
+.PHONY : cpp/src/main.cpp.o
+
+cpp/src/main.i: cpp/src/main.cpp.i
+.PHONY : cpp/src/main.i
+
+# target to preprocess a source file
+cpp/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandbox.dir/build.make CMakeFiles/sandbox.dir/cpp/src/main.cpp.i
+.PHONY : cpp/src/main.cpp.i
+
+cpp/src/main.s: cpp/src/main.cpp.s
+.PHONY : cpp/src/main.s
+
+# target to generate assembly for a file
+cpp/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sandbox.dir/build.make CMakeFiles/sandbox.dir/cpp/src/main.cpp.s
+.PHONY : cpp/src/main.cpp.s
+
 cpp/tests/test_grid.o: cpp/tests/test_grid.cpp.o
 .PHONY : cpp/tests/test_grid.o
 
@@ -528,6 +565,7 @@ help:
 	@echo "... gridplan_core"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... sandbox"
 	@echo "... test_grid"
 	@echo "... test_planners"
 	@echo "... bindings/module.o"
@@ -548,6 +586,9 @@ help:
 	@echo "... cpp/src/grid.o"
 	@echo "... cpp/src/grid.i"
 	@echo "... cpp/src/grid.s"
+	@echo "... cpp/src/main.o"
+	@echo "... cpp/src/main.i"
+	@echo "... cpp/src/main.s"
 	@echo "... cpp/tests/test_grid.o"
 	@echo "... cpp/tests/test_grid.i"
 	@echo "... cpp/tests/test_grid.s"

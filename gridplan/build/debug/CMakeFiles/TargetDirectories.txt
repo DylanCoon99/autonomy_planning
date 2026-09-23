@@ -2,6 +2,7 @@
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/_gridplan_core.dir
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/test_grid.dir
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/test_planners.dir
+/Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/sandbox.dir
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/bench_planners.dir
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/test.dir
 /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/CMakeFiles/edit_cache.dir

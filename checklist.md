@@ -31,9 +31,9 @@
 
 ## Day 3: C++ Grid
 
-- [ ] Implement flat `std::vector<uint8_t>` grid storage (row-major)
-- [ ] Implement padded-border construction
-- [ ] Implement linear index ↔ coordinate conversion
+- [x] Implement flat `std::vector<uint8_t>` grid storage (row-major)
+- [x] Implement padded-border construction
+- [x] Implement linear index ↔ coordinate conversion
 - [ ] Implement neighbor offset/cost tables for all connectivity modes:
   - [ ] 2D 4-connected
   - [ ] 2D 8-connected

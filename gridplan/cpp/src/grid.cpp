@@ -69,7 +69,25 @@ void Grid::build_table(Connectivity connectivity, int32_t row_stride, int32_t z_
 
 			for (auto& entry : selected_dirs) {
 				int32_t offset = entry.dr * row_stride + entry.dc + entry.dz * z_stride;
-				table_.emplace_back(offset, entry.cost);
+
+				// compute corner checks from component axes
+				std::vector<int32_t> checks;
+				int32_t axes[3] = {entry.dr, entry.dc, entry.dz};
+				int32_t strides[3] = {row_stride, 1, z_stride};
+
+				// count how many axes are non-zero
+				int n_axes = (entry.dr != 0) + (entry.dc != 0) + (entry.dz != 0);
+
+				if (n_axes >= 2) {
+					// for each non-zero axis, add the single-axis offset as a corner check
+					for (int a = 0; a < 3; ++a) {
+						if (axes[a] != 0) {
+							checks.push_back(axes[a] * strides[a]);
+						}
+					}
+				}
+
+				table_.push_back({offset, entry.cost, std::move(checks)});
 			}
 		}
 
@@ -81,14 +99,29 @@ uint8_t Grid::index_to_coordinate(uint32_t row, uint32_t col) {
 
 
 
-std::vector<uint32_t> Grid::get_neighbors(uint32_t index) {
-	// returns all valid neighbors for a node at a given index
+std::vector<std::pair<int32_t, float>> Grid::get_neighbors(uint32_t index) {
+	// returns all valid and reachable neighbors for a node at a given index
 
-	// first get all the neighbors
-	for (auto entry : table_) {
-		
+	std::vector<std::pair<int32_t, float>> neighbors;
+
+	for (const auto& entry : table_) {
+		if (grid_[index + entry.offset] != 0) continue;
+
+		// corner-cutting check: all component axes must be free
+		bool passable = true;
+		for (int32_t check : entry.corner_checks) {
+			if (grid_[index + check] != 0) {
+				passable = false;
+				break;
+			}
+		}
+
+		if (passable) {
+			neighbors.emplace_back(index + entry.offset, entry.cost);
+		}
 	}
 
+	return neighbors;
 }
 
 

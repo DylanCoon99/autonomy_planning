@@ -6,7 +6,7 @@ int main() {
                                   0, 0, 0, 0,
                                   1, 0, 0, 1,
                                   0, 0, 0, 0};
-    gridplan::Grid g(4, 4, data);
+    gridplan::Grid g(4, 4, data, gridplan::Connectivity::FOUR);
 
     
 

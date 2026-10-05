@@ -64,14 +64,19 @@ public:
 
 	uint8_t index_to_coordinate(uint32_t idx, uint32_t idy);
 
-	std::vector<uint32_t> get_neighbors(uint32_t index);
+	std::vector<std::pair<int32_t, float>> get_neighbors(uint32_t index);
 
 	void print_grid();
 
 private:
 	uint32_t rows_, cols_, depth_ = 1;
 	std::vector<uint8_t> grid_;
-	std::vector<std::pair<int32_t, float>> table_;
+	struct TableEntry {
+		int32_t offset;
+		float cost;
+		std::vector<int32_t> corner_checks;  // component offsets that must be free for diagonal moves
+	};
+	std::vector<TableEntry> table_;
 
 	void build_table(Connectivity connectivity, int32_t row_stride, int32_t z_stride);
 };

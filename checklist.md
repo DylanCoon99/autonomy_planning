@@ -34,7 +34,7 @@
 - [x] Implement flat `std::vector<uint8_t>` grid storage (row-major)
 - [x] Implement padded-border construction
 - [x] Implement linear index ↔ coordinate conversion
-- [ ] Implement neighbor offset/cost tables for all connectivity modes:
+- [x] Implement neighbor offset/cost tables for all connectivity modes:
   - [x] 2D 4-connected
   - [x] 2D 8-connected
   - [x] 3D 6-connected

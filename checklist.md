@@ -37,9 +37,9 @@
 - [ ] Implement neighbor offset/cost tables for all connectivity modes:
   - [x] 2D 4-connected
   - [x] 2D 8-connected
-  - [ ] 3D 6-connected
-  - [ ] 3D 18-connected
-  - [ ] 3D 26-connected
+  - [x] 3D 6-connected
+  - [x] 3D 18-connected
+  - [x] 3D 26-connected
 - [ ] Implement corner-cutting constraints for diagonal moves
 - [ ] Write GoogleTest cases for grid:
   - [ ] Index/coordinate round-trips

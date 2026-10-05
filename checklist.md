@@ -53,7 +53,7 @@
 
 - [x] Define `PlannerConfig` (tie-breaking, expansion recording, weight)
 - [x] Define `PlanResult` (path, cost, nodes expanded, expansion order, timing)
-- [ ] Define the shared planner interface
+- [x] Define the shared planner interface
 - [ ] Implement BFS
 - [ ] Implement Dijkstra with lazy-deletion priority queue
 - [ ] Implement optional expansion-order recording

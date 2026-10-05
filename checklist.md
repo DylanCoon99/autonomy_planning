@@ -40,12 +40,12 @@
   - [x] 3D 6-connected
   - [x] 3D 18-connected
   - [x] 3D 26-connected
-- [ ] Implement corner-cutting constraints for diagonal moves
-- [ ] Write GoogleTest cases for grid:
-  - [ ] Index/coordinate round-trips
-  - [ ] Neighbor tables correctness
-  - [ ] Corner-cutting rules on small hand-constructed grids
-  - [ ] Padded border behavior
+- [x] Implement corner-cutting constraints for diagonal moves
+- [x] Write GoogleTest cases for grid:
+  - [x] Index/coordinate round-trips
+  - [x] Neighbor tables correctness
+  - [x] Corner-cutting rules on small hand-constructed grids
+  - [x] Padded border behavior
 
 ---
 

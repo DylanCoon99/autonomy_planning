@@ -54,7 +54,7 @@
 - [x] Define `PlannerConfig` (tie-breaking, expansion recording, weight)
 - [x] Define `PlanResult` (path, cost, nodes expanded, expansion order, timing)
 - [x] Define the shared planner interface
-- [ ] Implement BFS
+- [x] Implement BFS
 - [ ] Implement Dijkstra with lazy-deletion priority queue
 - [ ] Implement optional expansion-order recording
 - [ ] Implement internal `std::chrono::steady_clock` timing

@@ -2,6 +2,16 @@
 
 namespace gridplan {
 
-// Placeholder — full implementation in Day 4
+PlannerResult Dijkstra::plan(Grid& grid, uint32_t start, uint32_t goal, const PlannerConfig& config) {
+
+    
+    /*
+    Dijkstra Algorithm
+    
+    
+    */
+
+}
+
 
 }  // namespace gridplan

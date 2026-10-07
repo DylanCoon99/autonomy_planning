@@ -60,9 +60,9 @@
 - [x] Implement internal `std::chrono::steady_clock` timing
 - [x] Write GoogleTest cases:
   - [x] BFS and Dijkstra return equal costs on uniform-cost 4-connected grids
-  - [ ] Unreachable goal handled correctly
+  - [x] Unreachable goal handled correctly
   - [x] Start == goal handled correctly
-  - [ ] Start or goal inside obstacle handled correctly
+  - [x] Start or goal inside obstacle handled correctly
 
 ---
 

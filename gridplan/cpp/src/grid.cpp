@@ -125,5 +125,10 @@ std::vector<std::pair<int32_t, float>> Grid::get_neighbors(uint32_t index) {
 }
 
 
+uint32_t Grid::size() {
+	return grid_.size();
+}
+
+
 
 }  // namespace gridplan

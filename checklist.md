@@ -55,13 +55,13 @@
 - [x] Define `PlanResult` (path, cost, nodes expanded, expansion order, timing)
 - [x] Define the shared planner interface
 - [x] Implement BFS
-- [ ] Implement Dijkstra with lazy-deletion priority queue
-- [ ] Implement optional expansion-order recording
-- [ ] Implement internal `std::chrono::steady_clock` timing
-- [ ] Write GoogleTest cases:
-  - [ ] BFS and Dijkstra return equal costs on uniform-cost 4-connected grids
+- [x] Implement Dijkstra with lazy-deletion priority queue
+- [x] Implement optional expansion-order recording
+- [x] Implement internal `std::chrono::steady_clock` timing
+- [x] Write GoogleTest cases:
+  - [x] BFS and Dijkstra return equal costs on uniform-cost 4-connected grids
   - [ ] Unreachable goal handled correctly
-  - [ ] Start == goal handled correctly
+  - [x] Start == goal handled correctly
   - [ ] Start or goal inside obstacle handled correctly
 
 ---

@@ -1089,4 +1089,5 @@ CMakeFiles/test_planners.dir/cpp/tests/test_planners.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
-  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/grid.hpp
+  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/grid.hpp \
+  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/dijkstra.hpp

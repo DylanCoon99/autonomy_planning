@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <set>
+#include <cmath>
 #include "gridplan/bfs.hpp"
+#include "gridplan/dijkstra.hpp"
 
 // Helper: convert (row, col) to padded linear index
 static uint32_t pi(uint32_t row, uint32_t col, uint32_t cols) {
@@ -134,4 +136,223 @@ TEST(BFS, PathLengthEqualsCostPlusOne) {
 
     auto result = bfs.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
     EXPECT_EQ(result.path.size(), (size_t)(result.cost + 1));
+}
+
+// ==================== Dijkstra tests ====================
+
+TEST(Dijkstra, AdjacentStartAndGoal) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(0, 1, 4), default_config());
+    EXPECT_EQ(result.path.front(), pi(0, 0, 4));
+    EXPECT_EQ(result.path.back(), pi(0, 1, 4));
+    EXPECT_EQ(result.path.size(), 2);
+    EXPECT_FLOAT_EQ(result.cost, 1.0f);
+}
+
+TEST(Dijkstra, StartEqualsGoal) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(1, 1, 4), pi(1, 1, 4), default_config());
+    EXPECT_EQ(result.path.size(), 1);
+    EXPECT_FLOAT_EQ(result.cost, 0.0f);
+}
+
+TEST(Dijkstra, CornerToCornerFourConnected) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_EQ(result.path.front(), pi(0, 0, 4));
+    EXPECT_EQ(result.path.back(), pi(3, 3, 4));
+    EXPECT_FLOAT_EQ(result.cost, 6.0f);
+}
+
+TEST(Dijkstra, CornerToCornerEightConnected) {
+    // On 8-connected, diagonal cost is sqrt(2). Optimal path from (0,0) to (3,3)
+    // is 3 diagonal steps, cost = 3*sqrt(2)
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::EIGHT);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_EQ(result.path.front(), pi(0, 0, 4));
+    EXPECT_EQ(result.path.back(), pi(3, 3, 4));
+    EXPECT_NEAR(result.cost, 3.0f * 1.414f, 0.01f);
+}
+
+TEST(Dijkstra, CostMatchesBFSOnFourConnected) {
+    // On uniform 4-connected, Dijkstra and BFS should find the same cost
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+    gridplan::BFS bfs;
+
+    auto d_result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto b_result = bfs.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(d_result.cost, b_result.cost);
+}
+
+TEST(Dijkstra, ObstacleForcesDetour) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 0] = 1;
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(2, 0, 4), default_config());
+    EXPECT_EQ(result.path.front(), pi(0, 0, 4));
+    EXPECT_EQ(result.path.back(), pi(2, 0, 4));
+    EXPECT_GT(result.cost, 2.0f);
+}
+
+TEST(Dijkstra, NarrowCorridor) {
+    std::vector<uint8_t> data(16, 1);
+    data[0 * 4 + 0] = 0;
+    data[0 * 4 + 1] = 0;
+    data[0 * 4 + 2] = 0;
+    data[0 * 4 + 3] = 0;
+    data[1 * 4 + 3] = 0;
+    data[2 * 4 + 3] = 0;
+    data[3 * 4 + 3] = 0;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(result.cost, 6.0f);
+}
+
+TEST(Dijkstra, PathAvoidsObstacles) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 0] = 1;
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    std::set<uint32_t> obstacles = {pi(1, 0, 4), pi(1, 1, 4), pi(1, 2, 4)};
+    for (uint32_t idx : result.path) {
+        EXPECT_FALSE(obstacles.count(idx));
+    }
+}
+
+TEST(Dijkstra, PathIsContiguous) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    uint32_t stride = 4 + 2;
+    for (size_t i = 0; i < result.path.size() - 1; ++i) {
+        int32_t diff = std::abs((int32_t)result.path[i + 1] - (int32_t)result.path[i]);
+        EXPECT_TRUE(diff == 1 || diff == (int32_t)stride);
+    }
+}
+
+TEST(Dijkstra, NodesExpandedIsPositive) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_GT(result.nodes_expanded, 0u);
+}
+
+TEST(Dijkstra, EightConnectedCheaperThanFourConnected) {
+    // 8-connected can take diagonals, so cost should be <= 4-connected
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid4(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Grid grid8(4, 4, data, gridplan::Connectivity::EIGHT);
+    gridplan::Dijkstra dijkstra;
+
+    auto r4 = dijkstra.plan(grid4, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto r8 = dijkstra.plan(grid8, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_LE(r8.cost, r4.cost);
+}
+
+// ==================== Edge case tests ====================
+// These test unreachable goals and start/goal inside obstacles.
+// Expected behavior: empty path and cost of -1.0f.
+
+TEST(BFS, UnreachableGoal) {
+    // Wall splits the grid in half vertically
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 2] = 1;
+    data[1 * 4 + 2] = 1;
+    data[2 * 4 + 2] = 1;
+    data[3 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::BFS bfs;
+
+    auto result = bfs.plan(grid, pi(0, 0, 4), pi(0, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(BFS, StartInsideObstacle) {
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 0] = 1;  // (0,0) is obstacle
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::BFS bfs;
+
+    auto result = bfs.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(BFS, GoalInsideObstacle) {
+    std::vector<uint8_t> data(16, 0);
+    data[3 * 4 + 3] = 1;  // (3,3) is obstacle
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::BFS bfs;
+
+    auto result = bfs.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(Dijkstra, UnreachableGoal) {
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 2] = 1;
+    data[1 * 4 + 2] = 1;
+    data[2 * 4 + 2] = 1;
+    data[3 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(0, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(Dijkstra, StartInsideObstacle) {
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 0] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(Dijkstra, GoalInsideObstacle) {
+    std::vector<uint8_t> data(16, 0);
+    data[3 * 4 + 3] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::Dijkstra dijkstra;
+
+    auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
 }

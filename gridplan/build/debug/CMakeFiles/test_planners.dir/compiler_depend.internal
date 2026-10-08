@@ -1090,6 +1090,7 @@ CMakeFiles/test_planners.dir/cpp/tests/test_planners.cpp.o
  /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
  /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
  /Users/Dylan/Documents/autonomy_planning/gridplan/build/debug/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+ /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/astar.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/bfs.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/dijkstra.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/grid.hpp

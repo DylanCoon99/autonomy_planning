@@ -57,7 +57,7 @@ PlannerResult Dijkstra::plan(Grid& grid, uint32_t start, uint32_t goal, const Pl
     }
 
     // priority queue stores a pair/tuple (cost, index)
-    std::priority_queue<std::pair<uint32_t, uint32_t>, std::vector<std::pair<uint32_t, uint32_t>>, std::greater<std::pair<uint32_t, uint32_t>>> priority_queue;
+    std::priority_queue<std::pair<float, uint32_t>, std::vector<std::pair<float, uint32_t>>, std::greater<std::pair<float, uint32_t>>> priority_queue;
     std::unordered_map<uint32_t, std::optional<uint32_t>> parents;
     std::vector<float> distances(grid.size(), std::numeric_limits<float>::infinity());
     uint32_t nodes_expanded = 0;
@@ -93,8 +93,8 @@ PlannerResult Dijkstra::plan(Grid& grid, uint32_t start, uint32_t goal, const Pl
 
         for (auto pair : neighbors) {
             // for each neighbor, check if the distance is smaller than current distance
-            auto [neighbor_cost, neighbor_node] = pair;
-            uint32_t new_cost = neighbor_cost + cost;
+            auto [neighbor_node, edge_cost] = pair;
+            float new_cost = edge_cost + cost;
             if (new_cost < distances[neighbor_node]) {
                 // update the shortest path for neighbor node
                 distances[neighbor_node] = new_cost;

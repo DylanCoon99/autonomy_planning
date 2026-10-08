@@ -3,6 +3,7 @@
 #include <cmath>
 #include "gridplan/bfs.hpp"
 #include "gridplan/dijkstra.hpp"
+#include "gridplan/astar.hpp"
 
 // Helper: convert (row, col) to padded linear index
 static uint32_t pi(uint32_t row, uint32_t col, uint32_t cols) {
@@ -10,7 +11,7 @@ static uint32_t pi(uint32_t row, uint32_t col, uint32_t cols) {
 }
 
 static gridplan::PlannerConfig default_config() {
-    return {.tie_break = false, .record_expansions = false, .weight = 1.0f};
+    return {.tie_break = false, .record_expansions = false, .weight = 1.0f, .heuristic = gridplan::Heuristic::MANHATTAN};
 }
 
 // ==================== BFS tests ====================
@@ -355,4 +356,205 @@ TEST(Dijkstra, GoalInsideObstacle) {
     auto result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
     EXPECT_TRUE(result.path.empty());
     EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+// ==================== A* tests ====================
+
+TEST(AStar, AdjacentStartAndGoal) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(0, 1, 4), default_config());
+    EXPECT_EQ(result.path.front(), pi(0, 0, 4));
+    EXPECT_EQ(result.path.back(), pi(0, 1, 4));
+    EXPECT_EQ(result.path.size(), 2);
+    EXPECT_FLOAT_EQ(result.cost, 1.0f);
+}
+
+TEST(AStar, StartEqualsGoal) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(1, 1, 4), pi(1, 1, 4), default_config());
+    EXPECT_EQ(result.path.size(), 1);
+    EXPECT_FLOAT_EQ(result.cost, 0.0f);
+}
+
+TEST(AStar, CornerToCornerFourConnected) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(result.cost, 6.0f);
+}
+
+TEST(AStar, CostMatchesDijkstraFourConnected) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    data[2 * 4 + 0] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    auto a_result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto d_result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(a_result.cost, d_result.cost);
+}
+
+TEST(AStar, CostMatchesDijkstraEightConnected) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    data[2 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::EIGHT);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    auto cfg = default_config();
+    cfg.heuristic = gridplan::Heuristic::OCTILE;
+
+    auto a_result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg);
+    auto d_result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg);
+    EXPECT_NEAR(a_result.cost, d_result.cost, 0.01f);
+}
+
+TEST(AStar, FewerExpansionsThanDijkstra) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    auto a_result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto d_result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_LE(a_result.nodes_expanded, d_result.nodes_expanded);
+}
+
+TEST(AStar, ZeroHeuristicMatchesDijkstra) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 0] = 1;
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    auto cfg = default_config();
+    cfg.heuristic = gridplan::Heuristic::ZERO;
+
+    auto a_result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg);
+    auto d_result = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(a_result.cost, d_result.cost);
+}
+
+TEST(AStar, PathAvoidsObstacles) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 0] = 1;
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    std::set<uint32_t> obstacles = {pi(1, 0, 4), pi(1, 1, 4), pi(1, 2, 4)};
+    for (uint32_t idx : result.path) {
+        EXPECT_FALSE(obstacles.count(idx));
+    }
+}
+
+TEST(AStar, PathIsContiguous) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    uint32_t stride = 4 + 2;
+    for (size_t i = 0; i < result.path.size() - 1; ++i) {
+        int32_t diff = std::abs((int32_t)result.path[i + 1] - (int32_t)result.path[i]);
+        EXPECT_TRUE(diff == 1 || diff == (int32_t)stride);
+    }
+}
+
+TEST(AStar, UnreachableGoal) {
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 2] = 1;
+    data[1 * 4 + 2] = 1;
+    data[2 * 4 + 2] = 1;
+    data[3 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(0, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+TEST(AStar, StartInsideObstacle) {
+    std::vector<uint8_t> data(16, 0);
+    data[0 * 4 + 0] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto result = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_TRUE(result.path.empty());
+    EXPECT_FLOAT_EQ(result.cost, -1.0f);
+}
+
+// ==================== Weighted A* tests ====================
+
+TEST(WeightedAStar, CostWithinWBound) {
+    // Weighted A* cost should be <= w * optimal cost
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    data[2 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    float w = 2.0f;
+    auto cfg = default_config();
+    cfg.weight = w;
+
+    auto optimal = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto weighted = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg);
+
+    EXPECT_LE(weighted.cost, w * optimal.cost);
+    EXPECT_GE(weighted.cost, optimal.cost);
+}
+
+TEST(WeightedAStar, Weight5CostWithinBound) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 0] = 1;
+    data[1 * 4 + 1] = 1;
+    data[1 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+    gridplan::Dijkstra dijkstra;
+
+    float w = 5.0f;
+    auto cfg = default_config();
+    cfg.weight = w;
+
+    auto optimal = dijkstra.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    auto weighted = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg);
+
+    EXPECT_LE(weighted.cost, w * optimal.cost);
+}
+
+TEST(WeightedAStar, Weight1MatchesAStar) {
+    // weight=1 should give the same optimal cost as regular A*
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto cfg_w1 = default_config();
+    cfg_w1.weight = 1.0f;
+
+    auto r1 = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_w1);
+    auto r2 = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
+    EXPECT_FLOAT_EQ(r1.cost, r2.cost);
 }

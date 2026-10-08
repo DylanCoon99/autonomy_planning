@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <vector>
 #include <utility>
+#include <tuple>
 
 namespace gridplan {
 
@@ -71,6 +72,13 @@ public:
 	uint32_t size();
 
 	bool is_obstacle(uint32_t index) const { return grid_[index] != 0; }
+
+	// Convert padded linear index to unpadded (row, col, depth) coordinates
+	std::tuple<uint32_t, uint32_t, uint32_t> index_to_coords(uint32_t index) const;
+
+	uint32_t get_cols() const { return cols_; }
+	uint32_t get_rows() const { return rows_; }
+	uint32_t get_depth() const { return depth_; }
 
 private:
 	uint32_t rows_, cols_, depth_ = 1;

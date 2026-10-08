@@ -129,6 +129,18 @@ uint32_t Grid::size() {
 	return grid_.size();
 }
 
+std::tuple<uint32_t, uint32_t, uint32_t> Grid::index_to_coords(uint32_t index) const {
+	uint32_t padded_cols = cols_ + 2;
+	uint32_t padded_rows = rows_ + 2;
+	uint32_t z_stride = padded_rows * padded_cols;
 
+	uint32_t z = index / z_stride;
+	uint32_t rem = index % z_stride;
+	uint32_t r = rem / padded_cols;
+	uint32_t c = rem % padded_cols;
+
+	// subtract 1 to remove padding offset
+	return {r - 1, c - 1, z - 1};
+}
 
 }  // namespace gridplan

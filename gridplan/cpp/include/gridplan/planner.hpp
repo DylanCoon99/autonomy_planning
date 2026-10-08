@@ -8,10 +8,18 @@
 
 namespace gridplan {
 
+enum class Heuristic {                                                                                                                                         
+	MANHATTAN,                                                                                                                                                 
+	OCTILE,                                                                                                                                                    
+	EUCLIDEAN,                                                                                                                                                 
+	ZERO  // makes A* behave like Dijkstra                                                                                                                     
+};
+
 struct PlannerConfig {
 	bool tie_break;
 	bool record_expansions;
 	float weight;
+	Heuristic heuristic;
 };
 
 

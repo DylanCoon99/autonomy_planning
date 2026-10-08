@@ -4,9 +4,27 @@
 
 namespace gridplan {
 
+struct QueueEntry {
+    float f;
+    float g;
+    uint32_t node;
+};
+
+struct CompareDefault {
+    bool operator()(const QueueEntry& a, const QueueEntry& b) {
+        return a.f > b.f;  // min-heap by f
+    }
+};
+
+struct CompareWithTieBreak {
+    bool operator()(const QueueEntry& a, const QueueEntry& b) {
+        if (a.f != b.f) return a.f > b.f;  // min-heap by f
+        return a.g < b.g;  // on equal f, prefer larger g
+    }
+};
+
 PlannerResult AStar::plan(Grid& grid, uint32_t start, uint32_t goal, const PlannerConfig& config) {
 
-    // works the same way as Djikstra, but with a heuristic
     auto start_time = std::chrono::steady_clock::now();
 
     // early-out: start or goal is an obstacle
@@ -21,10 +39,7 @@ PlannerResult AStar::plan(Grid& grid, uint32_t start, uint32_t goal, const Plann
         };
     }
 
-    // priority queue stores (f, index) where f = g + w*h
-    std::priority_queue<std::pair<float, uint32_t>, std::vector<std::pair<float, uint32_t>>, std::greater<std::pair<float, uint32_t>>> priority_queue;
     std::unordered_map<uint32_t, std::optional<uint32_t>> parents;
-    // distances stores g values (actual cost from start)
     std::vector<float> distances(grid.size(), std::numeric_limits<float>::infinity());
     uint32_t nodes_expanded = 0;
     std::vector<uint32_t> expansion_order;
@@ -32,46 +47,52 @@ PlannerResult AStar::plan(Grid& grid, uint32_t start, uint32_t goal, const Plann
     distances[start] = 0.0f;
     parents[start] = std::nullopt;
 
-    // put start in the priority queue
     float h_start = compute_heuristic(config.heuristic, start, goal, grid);
-    priority_queue.push({config.weight * h_start, start});
     bool found = false;
 
-    while (!priority_queue.empty()) {
-        auto [f, node] = priority_queue.top();
-        priority_queue.pop();
+    // Use a lambda to run the search with either comparator
+    auto run_search = [&](auto& pq) {
+        pq.push({config.weight * h_start, 0.0f, start});
 
-        // skip if already expanded
-        if (closed.count(node)) {
-            continue;
-        }
-        closed.insert(node);
+        while (!pq.empty()) {
+            auto entry = pq.top();
+            pq.pop();
 
-        ++nodes_expanded;
-        if (config.record_expansions) {
-            expansion_order.push_back(node);
-        }
+            if (closed.count(entry.node)) continue;
+            closed.insert(entry.node);
 
-        if (node == goal) {
-            found = true;
-            break;
-        }
+            ++nodes_expanded;
+            if (config.record_expansions) {
+                expansion_order.push_back(entry.node);
+            }
 
-        // look at neighbors
-        std::vector<std::pair<int32_t, float>> neighbors = grid.get_neighbors(node);
+            if (entry.node == goal) {
+                found = true;
+                break;
+            }
 
-        for (auto pair : neighbors) {
-            auto [neighbor_idx, edge_cost] = pair;
-            float g_new = distances[node] + edge_cost;
+            auto neighbors = grid.get_neighbors(entry.node);
 
-            if (g_new < distances[neighbor_idx]) {
-                distances[neighbor_idx] = g_new;
-                parents[neighbor_idx] = node;
-                float h = compute_heuristic(config.heuristic, neighbor_idx, goal, grid);
-                float f_new = g_new + config.weight * h;
-                priority_queue.push({f_new, neighbor_idx});
+            for (auto [neighbor_idx, edge_cost] : neighbors) {
+                float g_new = distances[entry.node] + edge_cost;
+
+                if (g_new < distances[neighbor_idx]) {
+                    distances[neighbor_idx] = g_new;
+                    parents[neighbor_idx] = entry.node;
+                    float h = compute_heuristic(config.heuristic, neighbor_idx, goal, grid);
+                    float f_new = g_new + config.weight * h;
+                    pq.push({f_new, g_new, static_cast<uint32_t>(neighbor_idx)});
+                }
             }
         }
+    };
+
+    if (config.tie_break) {
+        std::priority_queue<QueueEntry, std::vector<QueueEntry>, CompareWithTieBreak> pq;
+        run_search(pq);
+    } else {
+        std::priority_queue<QueueEntry, std::vector<QueueEntry>, CompareDefault> pq;
+        run_search(pq);
     }
 
     auto end_time = std::chrono::steady_clock::now();

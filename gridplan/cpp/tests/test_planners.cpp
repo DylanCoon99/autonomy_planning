@@ -4,6 +4,7 @@
 #include "gridplan/bfs.hpp"
 #include "gridplan/dijkstra.hpp"
 #include "gridplan/astar.hpp"
+#include "gridplan/heuristics.hpp"
 
 // Helper: convert (row, col) to padded linear index
 static uint32_t pi(uint32_t row, uint32_t col, uint32_t cols) {
@@ -557,4 +558,140 @@ TEST(WeightedAStar, Weight1MatchesAStar) {
     auto r1 = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_w1);
     auto r2 = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), default_config());
     EXPECT_FLOAT_EQ(r1.cost, r2.cost);
+}
+
+// ==================== Tie-breaking tests ====================
+
+TEST(TieBreaking, CostUnchangedWithTieBreaking) {
+    // Tie-breaking should not change the optimal cost
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto cfg_no_tb = default_config();
+    cfg_no_tb.tie_break = false;
+
+    auto cfg_tb = default_config();
+    cfg_tb.tie_break = true;
+
+    auto r_no_tb = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_no_tb);
+    auto r_tb = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_tb);
+    EXPECT_FLOAT_EQ(r_no_tb.cost, r_tb.cost);
+}
+
+TEST(TieBreaking, FewerOrEqualExpansionsOnOpenGrid) {
+    // On an open grid with many ties, tie-breaking should expand fewer or equal nodes
+    std::vector<uint8_t> data(64, 0);  // 8x8 open grid
+    gridplan::Grid grid(8, 8, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto cfg_no_tb = default_config();
+    cfg_no_tb.tie_break = false;
+
+    auto cfg_tb = default_config();
+    cfg_tb.tie_break = true;
+
+    auto r_no_tb = astar.plan(grid, pi(0, 0, 8), pi(7, 7, 8), cfg_no_tb);
+    auto r_tb = astar.plan(grid, pi(0, 0, 8), pi(7, 7, 8), cfg_tb);
+    EXPECT_LE(r_tb.nodes_expanded, r_no_tb.nodes_expanded);
+}
+
+TEST(TieBreaking, CostUnchangedWithObstacles) {
+    std::vector<uint8_t> data(16, 0);
+    data[1 * 4 + 1] = 1;
+    data[2 * 4 + 2] = 1;
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+    gridplan::AStar astar;
+
+    auto cfg_no_tb = default_config();
+    cfg_no_tb.tie_break = false;
+
+    auto cfg_tb = default_config();
+    cfg_tb.tie_break = true;
+
+    auto r_no_tb = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_no_tb);
+    auto r_tb = astar.plan(grid, pi(0, 0, 4), pi(3, 3, 4), cfg_tb);
+    EXPECT_FLOAT_EQ(r_no_tb.cost, r_tb.cost);
+}
+
+TEST(TieBreaking, EightConnectedCostUnchanged) {
+    std::vector<uint8_t> data(64, 0);
+    gridplan::Grid grid(8, 8, data, gridplan::Connectivity::EIGHT);
+    gridplan::AStar astar;
+
+    auto cfg_no_tb = default_config();
+    cfg_no_tb.tie_break = false;
+    cfg_no_tb.heuristic = gridplan::Heuristic::OCTILE;
+
+    auto cfg_tb = default_config();
+    cfg_tb.tie_break = true;
+    cfg_tb.heuristic = gridplan::Heuristic::OCTILE;
+
+    auto r_no_tb = astar.plan(grid, pi(0, 0, 8), pi(7, 7, 8), cfg_no_tb);
+    auto r_tb = astar.plan(grid, pi(0, 0, 8), pi(7, 7, 8), cfg_tb);
+    EXPECT_NEAR(r_no_tb.cost, r_tb.cost, 0.01f);
+}
+
+// ==================== Heuristic consistency tests ====================
+
+TEST(HeuristicConsistency, ManhattanConsistentFourConnected) {
+    // For a consistent heuristic: h(n) <= cost(n, n') + h(n') for all neighbors
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+
+    uint32_t goal = pi(3, 3, 4);
+
+    // Check consistency for every free cell
+    for (uint32_t r = 0; r < 4; ++r) {
+        for (uint32_t c = 0; c < 4; ++c) {
+            uint32_t idx = pi(r, c, 4);
+            float h_n = gridplan::compute_heuristic(gridplan::Heuristic::MANHATTAN, idx, goal, grid);
+
+            auto neighbors = grid.get_neighbors(idx);
+            for (auto [neighbor_idx, edge_cost] : neighbors) {
+                float h_np = gridplan::compute_heuristic(gridplan::Heuristic::MANHATTAN, neighbor_idx, goal, grid);
+                EXPECT_LE(h_n, edge_cost + h_np + 0.001f);
+            }
+        }
+    }
+}
+
+TEST(HeuristicConsistency, OctileConsistentEightConnected) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::EIGHT);
+
+    uint32_t goal = pi(3, 3, 4);
+
+    for (uint32_t r = 0; r < 4; ++r) {
+        for (uint32_t c = 0; c < 4; ++c) {
+            uint32_t idx = pi(r, c, 4);
+            float h_n = gridplan::compute_heuristic(gridplan::Heuristic::OCTILE, idx, goal, grid);
+
+            auto neighbors = grid.get_neighbors(idx);
+            for (auto [neighbor_idx, edge_cost] : neighbors) {
+                float h_np = gridplan::compute_heuristic(gridplan::Heuristic::OCTILE, neighbor_idx, goal, grid);
+                EXPECT_LE(h_n, edge_cost + h_np + 0.001f);
+            }
+        }
+    }
+}
+
+TEST(HeuristicConsistency, EuclideanConsistentFourConnected) {
+    std::vector<uint8_t> data(16, 0);
+    gridplan::Grid grid(4, 4, data, gridplan::Connectivity::FOUR);
+
+    uint32_t goal = pi(3, 3, 4);
+
+    for (uint32_t r = 0; r < 4; ++r) {
+        for (uint32_t c = 0; c < 4; ++c) {
+            uint32_t idx = pi(r, c, 4);
+            float h_n = gridplan::compute_heuristic(gridplan::Heuristic::EUCLIDEAN, idx, goal, grid);
+
+            auto neighbors = grid.get_neighbors(idx);
+            for (auto [neighbor_idx, edge_cost] : neighbors) {
+                float h_np = gridplan::compute_heuristic(gridplan::Heuristic::EUCLIDEAN, neighbor_idx, goal, grid);
+                EXPECT_LE(h_n, edge_cost + h_np + 0.001f);
+            }
+        }
+    }
 }

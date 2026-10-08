@@ -75,12 +75,12 @@
   - [x] Euclidean
 - [x] Implement A* with configurable heuristic
 - [x] Implement weighted A* (`f = g + w·h`)
-- [ ] Implement tie-breaking (prefer larger `g` on equal `f`) as a config option
+- [x] Implement tie-breaking (prefer larger `g` on equal `f`) as a config option
 - [x] Write GoogleTest cases:
   - [x] A* with zero heuristic behaves identically to Dijkstra
   - [x] A* cost equals Dijkstra cost for every admissible heuristic
   - [x] Weighted A* cost is within the `w` bound
-  - [ ] Verify heuristic consistency for each cost model
+  - [x] Verify heuristic consistency for each cost model
 
 ---
 

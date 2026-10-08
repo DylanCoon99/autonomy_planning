@@ -68,18 +68,18 @@
 
 ## Day 5: C++ A* and Weighted A*
 
-- [ ] Implement heuristics:
-  - [ ] Manhattan (2D and 3D)
-  - [ ] Octile (2D)
-  - [ ] 3D octile
-  - [ ] Euclidean
-- [ ] Implement A* with configurable heuristic
-- [ ] Implement weighted A* (`f = g + w·h`)
+- [x] Implement heuristics:
+  - [x] Manhattan (2D and 3D)
+  - [x] Octile (2D)
+  - [x] 3D octile
+  - [x] Euclidean
+- [x] Implement A* with configurable heuristic
+- [x] Implement weighted A* (`f = g + w·h`)
 - [ ] Implement tie-breaking (prefer larger `g` on equal `f`) as a config option
-- [ ] Write GoogleTest cases:
-  - [ ] A* with zero heuristic behaves identically to Dijkstra
-  - [ ] A* cost equals Dijkstra cost for every admissible heuristic
-  - [ ] Weighted A* cost is within the `w` bound
+- [x] Write GoogleTest cases:
+  - [x] A* with zero heuristic behaves identically to Dijkstra
+  - [x] A* cost equals Dijkstra cost for every admissible heuristic
+  - [x] Weighted A* cost is within the `w` bound
   - [ ] Verify heuristic consistency for each cost model
 
 ---

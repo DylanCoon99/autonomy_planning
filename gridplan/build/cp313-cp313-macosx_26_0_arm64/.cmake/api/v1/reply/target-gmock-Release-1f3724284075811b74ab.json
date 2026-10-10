@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_main.a"
+			"path" : "lib/libgmock.a"
 		}
 	],
 	"backtrace" : 3,
@@ -23,7 +23,7 @@
 		"files" : 
 		[
 			"build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/cmake/internal_utils.cmake",
-			"build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/CMakeLists.txt"
+			"build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 141,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 158,
+				"line" : 116,
 				"parent" : 0
 			},
 			{
@@ -63,7 +63,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 153,
+				"line" : 98,
 				"parent" : 0
 			},
 			{
@@ -75,7 +75,7 @@
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 113,
+				"line" : 75,
 				"parent" : 0
 			},
 			{
@@ -95,7 +95,7 @@
 	[
 		{
 			"backtrace" : 7,
-			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+			"id" : "Threads::Threads::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 6,
@@ -116,6 +116,14 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 8,
+					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock"
+				},
 				{
 					"backtrace" : 8,
 					"isSystem" : true,
@@ -149,7 +157,7 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
+	"id" : "gmock::@0f7bb11d64f3678238c7",
 	"install" : 
 	{
 		"destinations" : 
@@ -161,14 +169,14 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
+			"path" : "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpp05qy7uv/wheel/platlib/gridplan"
 		}
 	},
 	"interfaceCompileDependencies" : 
 	[
 		{
 			"backtrace" : 7,
-			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+			"id" : "Threads::Threads::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 6,
@@ -179,7 +187,7 @@
 	[
 		{
 			"backtrace" : 7,
-			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+			"id" : "Threads::Threads::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 6,
@@ -190,19 +198,19 @@
 	[
 		{
 			"backtrace" : 7,
-			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+			"id" : "Threads::Threads::@0f7bb11d64f3678238c7"
 		},
 		{
 			"backtrace" : 6,
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_main.a",
+	"name" : "gmock",
+	"nameOnDisk" : "libgmock.a",
 	"paths" : 
 	{
-		"build" : "_deps/googletest-build/googletest",
-		"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest"
+		"build" : "_deps/googletest-build/googlemock",
+		"source" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock"
 	},
 	"sourceGroups" : 
 	[
@@ -219,7 +227,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/src/gtest_main.cc",
+			"path" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googlemock/src/gmock-all.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

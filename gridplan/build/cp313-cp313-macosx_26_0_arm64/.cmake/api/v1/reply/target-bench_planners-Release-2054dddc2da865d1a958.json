@@ -108,15 +108,15 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "gridplan_core::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "benchmark::@a5e768fe43450e220d4b"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "benchmark_main::@a5e768fe43450e220d4b"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gridplan_core::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "bench_planners::@6890427a1f51a3e7e1df",

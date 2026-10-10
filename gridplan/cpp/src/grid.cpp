@@ -139,8 +139,8 @@ std::tuple<uint32_t, uint32_t, uint32_t> Grid::index_to_coords(uint32_t index) c
 	uint32_t r = rem / padded_cols;
 	uint32_t c = rem % padded_cols;
 
-	// subtract 1 to remove padding offset
-	return {r - 1, c - 1, z - 1};
+	// subtract 1 to remove padding offset; z is 0 for 2D grids
+	return {r - 1, c - 1, depth_ == 1 ? 0 : z - 1};
 }
 
 }  // namespace gridplan

@@ -103,9 +103,9 @@
 
 ## Day 7: Correctness Hardening and Profiling
 
-- [ ] Run full GoogleTest suite under asan-ubsan preset
-- [ ] Resolve all sanitizer findings
-- [ ] Run pytest suite under sanitized build
+- [x] Run full GoogleTest suite under asan-ubsan preset
+- [x] Resolve all sanitizer findings
+- [x] Run pytest suite under sanitized build
 - [ ] Add Google Benchmark microbenchmarks for each planner on fixed grids:
   - [ ] BFS on 2D and 3D grids
   - [ ] Dijkstra on 2D and 3D grids

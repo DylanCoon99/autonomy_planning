@@ -1,0 +1,192 @@
+Start testing: Oct 10 14:04 EDT
+----------------------------------------------------------
+1/2 Testing: test_grid
+1/2 Test: test_grid
+Command: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan/test_grid"
+Directory: /Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan
+"test_grid" start time: Oct 10 14:04 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 13 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 6 tests from GetNeighbors4
+[ RUN      ] GetNeighbors4.CenterOfOpenGrid
+[       OK ] GetNeighbors4.CenterOfOpenGrid (0 ms)
+[ RUN      ] GetNeighbors4.CornerCell
+[       OK ] GetNeighbors4.CornerCell (0 ms)
+[ RUN      ] GetNeighbors4.EdgeCell
+[       OK ] GetNeighbors4.EdgeCell (0 ms)
+[ RUN      ] GetNeighbors4.ObstacleBlocksNeighbor
+[       OK ] GetNeighbors4.ObstacleBlocksNeighbor (0 ms)
+[ RUN      ] GetNeighbors4.SurroundedByObstacles
+[       OK ] GetNeighbors4.SurroundedByObstacles (0 ms)
+[ RUN      ] GetNeighbors4.AllCostsAreOne
+[       OK ] GetNeighbors4.AllCostsAreOne (0 ms)
+[----------] 6 tests from GetNeighbors4 (0 ms total)
+
+[----------] 3 tests from GetNeighbors8
+[ RUN      ] GetNeighbors8.CenterOfOpenGrid
+[       OK ] GetNeighbors8.CenterOfOpenGrid (0 ms)
+[ RUN      ] GetNeighbors8.CornerCell
+[       OK ] GetNeighbors8.CornerCell (0 ms)
+[ RUN      ] GetNeighbors8.DiagonalCostsAreSqrt2
+[       OK ] GetNeighbors8.DiagonalCostsAreSqrt2 (0 ms)
+[----------] 3 tests from GetNeighbors8 (0 ms total)
+
+[----------] 4 tests from CornerCutting8
+[ RUN      ] CornerCutting8.BlockedByAdjacentObstacle
+[       OK ] CornerCutting8.BlockedByAdjacentObstacle (0 ms)
+[ RUN      ] CornerCutting8.DiagonalAllowedWhenBothAxesFree
+[       OK ] CornerCutting8.DiagonalAllowedWhenBothAxesFree (0 ms)
+[ RUN      ] CornerCutting8.DiagonalBlockedByOneAxis
+[       OK ] CornerCutting8.DiagonalBlockedByOneAxis (0 ms)
+[ RUN      ] CornerCutting8.DiagonalFreeButTargetBlocked
+[       OK ] CornerCutting8.DiagonalFreeButTargetBlocked (0 ms)
+[----------] 4 tests from CornerCutting8 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 3 test suites ran. (0 ms total)
+[  PASSED  ] 13 tests.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"test_grid" end time: Oct 10 14:04 EDT
+"test_grid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_planners
+2/2 Test: test_planners
+Command: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan/test_planners"
+Directory: /Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan
+"test_planners" start time: Oct 10 14:04 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/Dylan/Documents/autonomy_planning/gridplan/build/asan-ubsan/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 47 tests from 6 test suites.
+[----------] Global test environment set-up.
+[----------] 12 tests from BFS
+[ RUN      ] BFS.AdjacentStartAndGoal
+[       OK ] BFS.AdjacentStartAndGoal (0 ms)
+[ RUN      ] BFS.StartEqualsGoal
+[       OK ] BFS.StartEqualsGoal (0 ms)
+[ RUN      ] BFS.CornerToCornerEmptyGrid
+[       OK ] BFS.CornerToCornerEmptyGrid (0 ms)
+[ RUN      ] BFS.ObstacleForcesDetour
+[       OK ] BFS.ObstacleForcesDetour (0 ms)
+[ RUN      ] BFS.NarrowCorridor
+[       OK ] BFS.NarrowCorridor (0 ms)
+[ RUN      ] BFS.PathIsContiguous
+[       OK ] BFS.PathIsContiguous (0 ms)
+[ RUN      ] BFS.PathAvoidsObstacles
+[       OK ] BFS.PathAvoidsObstacles (0 ms)
+[ RUN      ] BFS.NodesExpandedIsPositive
+[       OK ] BFS.NodesExpandedIsPositive (0 ms)
+[ RUN      ] BFS.PathLengthEqualsCostPlusOne
+[       OK ] BFS.PathLengthEqualsCostPlusOne (0 ms)
+[ RUN      ] BFS.UnreachableGoal
+[       OK ] BFS.UnreachableGoal (0 ms)
+[ RUN      ] BFS.StartInsideObstacle
+[       OK ] BFS.StartInsideObstacle (0 ms)
+[ RUN      ] BFS.GoalInsideObstacle
+[       OK ] BFS.GoalInsideObstacle (0 ms)
+[----------] 12 tests from BFS (1 ms total)
+
+[----------] 14 tests from Dijkstra
+[ RUN      ] Dijkstra.AdjacentStartAndGoal
+[       OK ] Dijkstra.AdjacentStartAndGoal (0 ms)
+[ RUN      ] Dijkstra.StartEqualsGoal
+[       OK ] Dijkstra.StartEqualsGoal (0 ms)
+[ RUN      ] Dijkstra.CornerToCornerFourConnected
+[       OK ] Dijkstra.CornerToCornerFourConnected (0 ms)
+[ RUN      ] Dijkstra.CornerToCornerEightConnected
+[       OK ] Dijkstra.CornerToCornerEightConnected (0 ms)
+[ RUN      ] Dijkstra.CostMatchesBFSOnFourConnected
+[       OK ] Dijkstra.CostMatchesBFSOnFourConnected (0 ms)
+[ RUN      ] Dijkstra.ObstacleForcesDetour
+[       OK ] Dijkstra.ObstacleForcesDetour (0 ms)
+[ RUN      ] Dijkstra.NarrowCorridor
+[       OK ] Dijkstra.NarrowCorridor (0 ms)
+[ RUN      ] Dijkstra.PathAvoidsObstacles
+[       OK ] Dijkstra.PathAvoidsObstacles (0 ms)
+[ RUN      ] Dijkstra.PathIsContiguous
+[       OK ] Dijkstra.PathIsContiguous (0 ms)
+[ RUN      ] Dijkstra.NodesExpandedIsPositive
+[       OK ] Dijkstra.NodesExpandedIsPositive (0 ms)
+[ RUN      ] Dijkstra.EightConnectedCheaperThanFourConnected
+[       OK ] Dijkstra.EightConnectedCheaperThanFourConnected (0 ms)
+[ RUN      ] Dijkstra.UnreachableGoal
+[       OK ] Dijkstra.UnreachableGoal (0 ms)
+[ RUN      ] Dijkstra.StartInsideObstacle
+[       OK ] Dijkstra.StartInsideObstacle (0 ms)
+[ RUN      ] Dijkstra.GoalInsideObstacle
+[       OK ] Dijkstra.GoalInsideObstacle (0 ms)
+[----------] 14 tests from Dijkstra (1 ms total)
+
+[----------] 11 tests from AStar
+[ RUN      ] AStar.AdjacentStartAndGoal
+[       OK ] AStar.AdjacentStartAndGoal (0 ms)
+[ RUN      ] AStar.StartEqualsGoal
+[       OK ] AStar.StartEqualsGoal (0 ms)
+[ RUN      ] AStar.CornerToCornerFourConnected
+[       OK ] AStar.CornerToCornerFourConnected (0 ms)
+[ RUN      ] AStar.CostMatchesDijkstraFourConnected
+[       OK ] AStar.CostMatchesDijkstraFourConnected (0 ms)
+[ RUN      ] AStar.CostMatchesDijkstraEightConnected
+[       OK ] AStar.CostMatchesDijkstraEightConnected (0 ms)
+[ RUN      ] AStar.FewerExpansionsThanDijkstra
+[       OK ] AStar.FewerExpansionsThanDijkstra (0 ms)
+[ RUN      ] AStar.ZeroHeuristicMatchesDijkstra
+[       OK ] AStar.ZeroHeuristicMatchesDijkstra (0 ms)
+[ RUN      ] AStar.PathAvoidsObstacles
+[       OK ] AStar.PathAvoidsObstacles (0 ms)
+[ RUN      ] AStar.PathIsContiguous
+[       OK ] AStar.PathIsContiguous (0 ms)
+[ RUN      ] AStar.UnreachableGoal
+[       OK ] AStar.UnreachableGoal (0 ms)
+[ RUN      ] AStar.StartInsideObstacle
+[       OK ] AStar.StartInsideObstacle (0 ms)
+[----------] 11 tests from AStar (1 ms total)
+
+[----------] 3 tests from WeightedAStar
+[ RUN      ] WeightedAStar.CostWithinWBound
+[       OK ] WeightedAStar.CostWithinWBound (0 ms)
+[ RUN      ] WeightedAStar.Weight5CostWithinBound
+[       OK ] WeightedAStar.Weight5CostWithinBound (0 ms)
+[ RUN      ] WeightedAStar.Weight1MatchesAStar
+[       OK ] WeightedAStar.Weight1MatchesAStar (0 ms)
+[----------] 3 tests from WeightedAStar (0 ms total)
+
+[----------] 4 tests from TieBreaking
+[ RUN      ] TieBreaking.CostUnchangedWithTieBreaking
+[       OK ] TieBreaking.CostUnchangedWithTieBreaking (0 ms)
+[ RUN      ] TieBreaking.FewerOrEqualExpansionsOnOpenGrid
+[       OK ] TieBreaking.FewerOrEqualExpansionsOnOpenGrid (0 ms)
+[ RUN      ] TieBreaking.CostUnchangedWithObstacles
+[       OK ] TieBreaking.CostUnchangedWithObstacles (0 ms)
+[ RUN      ] TieBreaking.EightConnectedCostUnchanged
+[       OK ] TieBreaking.EightConnectedCostUnchanged (0 ms)
+[----------] 4 tests from TieBreaking (1 ms total)
+
+[----------] 3 tests from HeuristicConsistency
+[ RUN      ] HeuristicConsistency.ManhattanConsistentFourConnected
+[       OK ] HeuristicConsistency.ManhattanConsistentFourConnected (0 ms)
+[ RUN      ] HeuristicConsistency.OctileConsistentEightConnected
+[       OK ] HeuristicConsistency.OctileConsistentEightConnected (0 ms)
+[ RUN      ] HeuristicConsistency.EuclideanConsistentFourConnected
+[       OK ] HeuristicConsistency.EuclideanConsistentFourConnected (0 ms)
+[----------] 3 tests from HeuristicConsistency (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 47 tests from 6 test suites ran. (5 ms total)
+[  PASSED  ] 47 tests.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"test_planners" end time: Oct 10 14:04 EDT
+"test_planners" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 10 14:04 EDT

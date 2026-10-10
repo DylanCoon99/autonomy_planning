@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgridplan_core.a CMakeFiles/gridplan_core.dir/cpp/src/grid.cpp.o CMakeFiles/gridplan_core.dir/cpp/src/bfs.cpp.o CMakeFiles/gridplan_core.dir/cpp/src/dijkstra.cpp.o CMakeFiles/gridplan_core.dir/cpp/src/astar.cpp.o
+/usr/bin/ranlib libgridplan_core.a

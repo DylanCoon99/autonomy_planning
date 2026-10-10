@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/Dylan/Documents/autonomy_planning/gridplan/build/release/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

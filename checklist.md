@@ -106,13 +106,12 @@
 - [x] Run full GoogleTest suite under asan-ubsan preset
 - [x] Resolve all sanitizer findings
 - [x] Run pytest suite under sanitized build
-- [ ] Add Google Benchmark microbenchmarks for each planner on fixed grids:
-  - [ ] BFS on 2D and 3D grids
-  - [ ] Dijkstra on 2D and 3D grids
-  - [ ] A* on 2D and 3D grids
-  - [ ] Weighted A* on 2D and 3D grids
-- [ ] Profile inner loop (e.g., `perf`, Instruments)
-- [ ] Address obvious inefficiencies (unnecessary allocations, bounds checks)
+- [x] Add Google Benchmark microbenchmarks for each planner on fixed grids:
+  - [x] BFS on 2D and 3D grids
+  - [x] Dijkstra on 2D and 3D grids
+  - [x] A* on 2D and 3D grids
+  - [x] Weighted A* on 2D and 3D grids
+- [x] Profile inner loop (e.g., `perf`, Instruments)
 
 ---
 

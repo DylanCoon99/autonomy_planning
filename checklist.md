@@ -154,38 +154,38 @@
 
 - [x] Complete any remaining sweep runs
 - [x] Verify reproducibility (identical seeds → identical results)
-- [ ] Compute medians and variance over seeds
-- [ ] Spot-check results for anomalies or errors
+- [x] Compute medians and variance over seeds
+- [x] Spot-check results for anomalies or errors
 - [x] Organize raw CSV data for analysis
 
 ---
 
 ## Day 12: Analysis and Plots
 
-- [ ] Write `analyze.py` to generate summary plots
-- [ ] Plot: A* expansion reduction vs. Dijkstra by obstacle density
-- [ ] Plot: Weighted A* empirical suboptimality vs. theoretical bound
-- [ ] Plot: Tie-breaking effect on open vs. cluttered grids
-- [ ] Plot: Runtime and memory scaling from 2D to 3D
-- [ ] Plot: C++ speedup over Python reference by grid size
-- [ ] Plot: Binding/conversion overhead fraction by problem size
-- [ ] Plot: Profiling breakdown (heap ops, neighbor expansion, memory access)
+- [x] Write `analyze.py` to generate summary plots
+- [x] Plot: A* expansion reduction vs. Dijkstra by obstacle density
+- [x] Plot: Weighted A* empirical suboptimality vs. theoretical bound
+- [x] Plot: Tie-breaking effect on open vs. cluttered grids
+- [x] Plot: Runtime and memory scaling from 2D to 3D
+- [x] Plot: C++ speedup over Python reference by grid size
+- [x] Plot: Binding/conversion overhead fraction by problem size
+- [x] Plot: Profiling breakdown (heap ops, neighbor expansion, memory access)
 
 ---
 
 ## Day 13: Report
 
-- [ ] Write `README.md` report addressing all Section 8 questions:
-  - [ ] Q1: A* expansion reduction vs. Dijkstra; effect of obstacle density
-  - [ ] Q2: Weighted A* empirical vs. theoretical suboptimality
-  - [ ] Q3: Tie-breaking impact on different grid types
-  - [ ] Q4: 2D to 3D runtime/memory scaling and implications
-  - [ ] Q5: C++ vs. Python speedup; binding overhead analysis
-  - [ ] Q6: Profiling results for C++ search
-  - [ ] Q7: Path geometry characterization; heading changes for Project 3
-- [ ] Include supporting figures in the report
-- [ ] Document design decisions (e.g., template vs. runtime dimension)
-- [ ] Document build and usage instructions
+- [x] Write `README.md` report addressing all Section 8 questions:
+  - [x] Q1: A* expansion reduction vs. Dijkstra; effect of obstacle density
+  - [x] Q2: Weighted A* empirical vs. theoretical suboptimality
+  - [x] Q3: Tie-breaking impact on different grid types
+  - [x] Q4: 2D to 3D runtime/memory scaling and implications
+  - [x] Q5: C++ vs. Python speedup; binding overhead analysis
+  - [x] Q6: Profiling results for C++ search
+  - [x] Q7: Path geometry characterization; heading changes for Project 3
+- [x] Include supporting figures in the report
+- [x] Document design decisions (e.g., template vs. runtime dimension)
+- [x] Document build and usage instructions
 
 ---
 

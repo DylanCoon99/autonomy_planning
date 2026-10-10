@@ -126,37 +126,37 @@
 
 ## Day 9: 3D Visualization
 
-- [ ] Render occupied voxels (surface voxels or point cloud) in `viz3d.py`
-- [ ] Render planned path through 3D grid
-- [ ] Generate at least one static 3D rendering of a planned path
-- [ ] Handle large grids gracefully (surface-only rendering or downsampling)
+- [x] Render occupied voxels (surface voxels or point cloud) in `viz3d.py`
+- [x] Render planned path through 3D grid
+- [x] Generate at least one static 3D rendering of a planned path
+- [x] Handle large grids gracefully (surface-only rendering or downsampling)
 
 ---
 
 ## Day 10: Benchmark Sweep (Part 1)
 
-- [ ] Write `run_benchmark.py` sweep script
-- [ ] Configure sweep variables:
-  - [ ] Grid sizes: 64², 256², 1024², 4096² (2D); 32³, 64³, 128³, 256³ (3D)
-  - [ ] Obstacle density: 0.0, 0.1, 0.2, 0.3
-  - [ ] Connectivity: all supported modes
-  - [ ] Heuristic weight: 1.0, 1.5, 2.0, 5.0
-  - [ ] Tie-breaking: on and off
-  - [ ] Implementation: C++ and Python reference (small grids only for Python)
-- [ ] Use fixed seeds for reproducibility
-- [ ] Record per-run metrics: path cost, suboptimality, nodes expanded, peak open-set size, C++ search time, Python end-to-end time
-- [ ] Output results to CSV
-- [ ] Begin running the sweep
+- [x] Write `run_benchmark.py` sweep script
+- [x] Configure sweep variables:
+  - [x] Grid sizes: 64², 256², 1024², 4096² (2D); 32³, 64³, 128³, 256³ (3D)
+  - [x] Obstacle density: 0.0, 0.1, 0.2, 0.3
+  - [x] Connectivity: all supported modes
+  - [x] Heuristic weight: 1.0, 1.5, 2.0, 5.0
+  - [x] Tie-breaking: on and off
+  - [x] Implementation: C++ and Python reference (small grids only for Python)
+- [x] Use fixed seeds for reproducibility
+- [x] Record per-run metrics: path cost, suboptimality, nodes expanded, peak open-set size, C++ search time, Python end-to-end time
+- [x] Output results to CSV
+- [x] Begin running the sweep
 
 ---
 
 ## Day 11: Benchmark Sweep (Part 2)
 
-- [ ] Complete any remaining sweep runs
-- [ ] Verify reproducibility (identical seeds → identical results)
+- [x] Complete any remaining sweep runs
+- [x] Verify reproducibility (identical seeds → identical results)
 - [ ] Compute medians and variance over seeds
 - [ ] Spot-check results for anomalies or errors
-- [ ] Organize raw CSV data for analysis
+- [x] Organize raw CSV data for analysis
 
 ---
 

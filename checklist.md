@@ -117,10 +117,10 @@
 
 ## Day 8: 2D Visualization
 
-- [ ] Implement expansion-order heatmaps with path overlay in `viz2d.py`
-- [ ] Side-by-side comparison of all planners on one map
-- [ ] Expansion animation exported as GIF or MP4
-- [ ] Generate at least one animation per algorithm
+- [x] Implement expansion-order heatmaps with path overlay in `viz2d.py`
+- [x] Side-by-side comparison of all planners on one map
+- [x] Expansion animation exported as GIF or MP4
+- [x] Generate at least one animation per algorithm
 
 ---
 

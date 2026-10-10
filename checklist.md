@@ -196,7 +196,3 @@
 - [ ] Verify `pip install -e .` works cleanly from scratch
 - [ ] Verify benchmark sweep reproduces from a single command
 - [ ] Clean up code and remove dead code
-- [ ] (Optional) Begin Theta* extension
-- [ ] (Optional) Begin Jump Point Search extension
-- [ ] (Optional) Begin heap alternatives comparison
-- [ ] (Optional) Set up GitHub Actions CI

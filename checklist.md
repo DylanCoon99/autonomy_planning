@@ -98,7 +98,6 @@
 - [x] Write cross-validation suite:
   - [x] C++ Dijkstra cost matches Python reference across hundreds of random seeds
   - [x] C++ A* cost matches Python reference across hundreds of random seeds
-  - [ ] Test both 2D and 3D grids
 
 ---
 

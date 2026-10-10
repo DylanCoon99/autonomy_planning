@@ -3,8 +3,6 @@
 
 namespace gridplan {
 
-// Placeholder — full implementation in Day 3
-
 // 2D constructor
 Grid::Grid(uint32_t rows, uint32_t cols, const std::vector<uint8_t>& grid, Connectivity connectivity)
 		: rows_(rows), cols_(cols), grid_((rows + 2) * (cols + 2), 1) {

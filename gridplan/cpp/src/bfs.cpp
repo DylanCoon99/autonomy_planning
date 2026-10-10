@@ -7,10 +7,6 @@
 
 namespace gridplan {
 
-// Placeholder — full implementation in Day 4
-
-// should implement the plan method for the planner interface
-
 
 PlannerResult BFS::plan(Grid& grid, uint32_t start, uint32_t goal, const PlannerConfig& config) {
 

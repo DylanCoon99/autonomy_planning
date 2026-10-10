@@ -67,8 +67,6 @@ public:
 
 	std::vector<std::pair<int32_t, float>> get_neighbors(uint32_t index);
 
-	void print_grid();
-
 	uint32_t size();
 
 	bool is_obstacle(uint32_t index) const { return grid_[index] != 0; }

@@ -191,7 +191,7 @@
 
 ## Day 14: Polish and Optional Extension
 
-- [ ] Final review of all tests (GoogleTest + pytest)
-- [ ] Verify `pip install -e .` works cleanly from scratch
-- [ ] Verify benchmark sweep reproduces from a single command
-- [ ] Clean up code and remove dead code
+- [x] Final review of all tests (GoogleTest + pytest)
+- [x] Verify `pip install -e .` works cleanly from scratch
+- [x] Verify benchmark sweep reproduces from a single command
+- [x] Clean up code and remove dead code

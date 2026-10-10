@@ -1094,5 +1094,6 @@ CMakeFiles/test_planners.dir/cpp/tests/test_planners.cpp.o
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/bfs.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/dijkstra.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/grid.hpp
+ /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/heuristics.hpp
  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/planner.hpp
 

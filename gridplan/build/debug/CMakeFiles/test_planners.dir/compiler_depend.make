@@ -1093,6 +1093,7 @@ CMakeFiles/test_planners.dir/cpp/tests/test_planners.cpp.o: /Users/Dylan/Documen
   /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/bfs.hpp \
   /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/dijkstra.hpp \
   /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/grid.hpp \
+  /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/heuristics.hpp \
   /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/planner.hpp
 
 
@@ -1217,6 +1218,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_nlink_t.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h:
+
+/Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include/gridplan/heuristics.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h:
 

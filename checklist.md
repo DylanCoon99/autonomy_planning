@@ -91,10 +91,10 @@
 - [x] Expose result path and expansion order as NumPy arrays
 - [x] Release GIL during search with `py::gil_scoped_release`
 - [x] Measure search time inside C++ and end-to-end from Python
-- [ ] Write pytest binding tests:
-  - [ ] Incorrect dtypes raise clear exceptions
-  - [ ] Non-contiguous arrays handled or rejected
-  - [ ] Wrong dimensionality raises clear exceptions
+- [x] Write pytest binding tests:
+  - [x] Incorrect dtypes raise clear exceptions
+  - [x] Non-contiguous arrays handled or rejected
+  - [x] Wrong dimensionality raises clear exceptions
 - [ ] Write cross-validation suite:
   - [ ] C++ Dijkstra cost matches Python reference across hundreds of random seeds
   - [ ] C++ A* cost matches Python reference across hundreds of random seeds

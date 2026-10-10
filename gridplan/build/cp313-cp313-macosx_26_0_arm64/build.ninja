@@ -239,6 +239,47 @@ build test_planners: CXX_EXECUTABLE_LINKER__test_planners_Release CMakeFiles/tes
   TARGET_SUPPORT_DIR = CMakeFiles/test_planners.dir
 
 # =============================================================================
+# Object build statements for EXECUTABLE target sandbox
+
+
+#############################################
+# Order-only phony target for sandbox
+
+build cmake_object_order_depends_target_sandbox: phony || cmake_object_order_depends_target_gridplan_core
+
+build CMakeFiles/sandbox.dir/cpp/src/main.cpp.o: CXX_COMPILER__sandbox_unscanned_Release /Users/Dylan/Documents/autonomy_planning/gridplan/cpp/src/main.cpp || cmake_object_order_depends_target_sandbox
+  CONFIG = Release
+  DEP_FILE = CMakeFiles/sandbox.dir/cpp/src/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++20 -arch arm64 -fPIE
+  INCLUDES = -I/Users/Dylan/Documents/autonomy_planning/gridplan/cpp/include
+  OBJECT_DIR = CMakeFiles/sandbox.dir
+  OBJECT_FILE_DIR = CMakeFiles/sandbox.dir/cpp/src
+  TARGET_COMPILE_PDB = CMakeFiles/sandbox.dir/
+  TARGET_PDB = sandbox.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/sandbox.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sandbox
+
+
+#############################################
+# Link the executable sandbox
+
+build sandbox: CXX_EXECUTABLE_LINKER__sandbox_Release CMakeFiles/sandbox.dir/cpp/src/main.cpp.o | libgridplan_core.a || libgridplan_core.a
+  CONFIG = Release
+  FLAGS = -O3 -DNDEBUG -arch arm64
+  LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names
+  LINK_LIBRARIES = libgridplan_core.a
+  OBJECT_DIR = CMakeFiles/sandbox.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/sandbox.dir/
+  TARGET_FILE = sandbox
+  TARGET_PDB = sandbox.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/sandbox.dir
+
+# =============================================================================
 # Object build statements for EXECUTABLE target bench_planners
 
 
@@ -1353,7 +1394,7 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64
 
-build all: phony libgridplan_core.a _gridplan_core.cpython-313-darwin.so test_grid test_planners bench_planners _deps/pybind11-build/all _deps/googletest-build/all _deps/googlebenchmark-build/all
+build all: phony libgridplan_core.a _gridplan_core.cpython-313-darwin.so test_grid test_planners sandbox bench_planners _deps/pybind11-build/all _deps/googletest-build/all _deps/googlebenchmark-build/all
 
 # =============================================================================
 

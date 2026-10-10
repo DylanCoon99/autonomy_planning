@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest.a"
+			"path" : "lib/libgtest_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 123,
+				"line" : 141,
 				"parent" : 0
 			},
 			{
@@ -59,6 +59,12 @@
 				"file" : 0,
 				"line" : 305,
 				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 153,
+				"parent" : 0
 			},
 			{
 				"command" : 5,
@@ -88,8 +94,12 @@
 	"compileDependencies" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"compileGroups" : 
@@ -107,11 +117,13 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
+					"isSystem" : true,
 					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
+					"isSystem" : true,
 					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest"
 				}
 			],
@@ -120,7 +132,7 @@
 			{
 				"backtraces" : 
 				[
-					8
+					9
 				],
 				"standard" : "20"
 			},
@@ -130,7 +142,14 @@
 			]
 		}
 	],
-	"id" : "gtest::@1ea2dfc0605fe3ab2a3f",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		}
+	],
+	"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f",
 	"install" : 
 	{
 		"destinations" : 
@@ -142,32 +161,44 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+			"path" : "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
 		}
 	},
 	"interfaceCompileDependencies" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"interfaceLinkLibraries" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"linkLibraries" : 
 	[
 		{
-			"backtrace" : 6,
+			"backtrace" : 7,
 			"id" : "Threads::Threads::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"name" : "gtest",
-	"nameOnDisk" : "libgtest.a",
+	"name" : "gtest_main",
+	"nameOnDisk" : "libgtest_main.a",
 	"paths" : 
 	{
 		"build" : "_deps/googletest-build/googletest",
@@ -188,7 +219,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/src/gtest-all.cc",
+			"path" : "build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/src/gtest_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

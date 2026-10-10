@@ -23,11 +23,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -55,11 +55,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/uname"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/uname"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/uname"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/uname"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/uname"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/uname"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/uname"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/uname"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/uname"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/uname"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/uname"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/uname"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/uname"
       - "/Users/Dylan/anaconda3/bin/uname"
       - "/Users/Dylan/anaconda3/condabin/uname"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/uname"
@@ -77,10 +77,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -105,7 +105,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "message-v1"
     backtrace:
@@ -136,11 +137,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -168,10 +169,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -196,7 +197,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -225,10 +227,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -253,7 +255,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "message-v1"
     backtrace:
@@ -338,8 +341,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -366,10 +369,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -394,7 +397,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -416,8 +420,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -444,10 +448,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -472,7 +476,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -494,8 +499,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -522,10 +527,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -550,7 +555,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -572,8 +578,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -600,10 +606,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -628,7 +634,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -650,8 +657,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -678,10 +685,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -706,7 +713,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -728,8 +736,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -756,10 +764,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -784,7 +792,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -806,8 +815,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -832,8 +841,8 @@ events:
       - "/Library/Apple/usr/bin/"
     searched_directories:
       - "/usr/bin/objcopy"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/objcopy"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/objcopy"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/objcopy"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/objcopy"
       - "/Users/Dylan/anaconda3/bin/objcopy"
       - "/Users/Dylan/anaconda3/condabin/objcopy"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/objcopy"
@@ -860,10 +869,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -888,7 +897,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -910,8 +920,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -936,8 +946,8 @@ events:
       - "/Library/Apple/usr/bin/"
     searched_directories:
       - "/usr/bin/readelf"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/readelf"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/readelf"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/readelf"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/readelf"
       - "/Users/Dylan/anaconda3/bin/readelf"
       - "/Users/Dylan/anaconda3/condabin/readelf"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/readelf"
@@ -964,10 +974,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -992,7 +1002,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -1014,8 +1025,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -1040,8 +1051,8 @@ events:
       - "/Library/Apple/usr/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/dlltool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/dlltool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/dlltool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/dlltool"
       - "/Users/Dylan/anaconda3/bin/dlltool"
       - "/Users/Dylan/anaconda3/condabin/dlltool"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/dlltool"
@@ -1068,10 +1079,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1096,7 +1107,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -1118,8 +1130,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -1144,8 +1156,8 @@ events:
       - "/Library/Apple/usr/bin/"
     searched_directories:
       - "/usr/bin/addr2line"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/addr2line"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/addr2line"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/addr2line"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/addr2line"
       - "/Users/Dylan/anaconda3/bin/addr2line"
       - "/Users/Dylan/anaconda3/condabin/addr2line"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/addr2line"
@@ -1172,10 +1184,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1200,7 +1212,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -1222,8 +1235,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -1248,8 +1261,8 @@ events:
       - "/Library/Apple/usr/bin/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/tapi"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/tapi"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/tapi"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/tapi"
       - "/Users/Dylan/anaconda3/bin/tapi"
       - "/Users/Dylan/anaconda3/condabin/tapi"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/tapi"
@@ -1276,10 +1289,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1304,7 +1317,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "find-v1"
     backtrace:
@@ -1328,11 +1342,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -1360,19 +1374,19 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/install_name_tool"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/install_name_tool"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/install_name_tool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/install_name_tool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/install_name_tool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/install_name_tool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/install_name_tool"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/install_name_tool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/install_name_tool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/install_name_tool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/install_name_tool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/install_name_tool"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/install_name_tool"
     found: "/Users/Dylan/anaconda3/bin/install_name_tool"
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1397,7 +1411,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1407,8 +1422,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1422,17 +1437,17 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q'
         
-        Run Build Command(s): ninja -v cmTC_28888
-        [1/2] /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): ninja -v cmTC_4b81e
+        [1/2] /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 21.0.0 (clang-2100.3.34.2)
         Target: arm64-apple-darwin25.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.0.0 (clang-2100.3.34.2) default target arm64-apple-darwin25.6.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
@@ -1446,12 +1461,12 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        [2/2] : && /usr/bin/clang++ -arch arm64 -v -Wl,-v CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_28888   && :
+        [2/2] : && /usr/bin/clang++ -arch arm64 -v -Wl,-v CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4b81e   && :
         Apple clang version 21.0.0 (clang-2100.3.34.2)
         Target: arm64-apple-darwin25.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_28888 -L/usr/local/lib -v CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4b81e -L/usr/local/lib -v CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-27037.1
         BUILD 21:17:51 Aug 25 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1506,17 +1521,17 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB']
+        ignore line: [Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q']
         ignore line: []
-        ignore line: [Run Build Command(s): ninja -v cmTC_28888]
-        ignore line: [[1/2] /usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): ninja -v cmTC_4b81e]
+        ignore line: [[1/2] /usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 21.0.0 (clang-2100.3.34.2)]
         ignore line: [Target: arm64-apple-darwin25.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HDTyPB -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-3NEP3Q -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.3.34.2) default target arm64-apple-darwin25.6.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1530,12 +1545,12 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang++ -arch arm64 -v -Wl -v CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_28888   && :]
+        ignore line: [[2/2] : && /usr/bin/clang++ -arch arm64 -v -Wl -v CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4b81e   && :]
         ignore line: [Apple clang version 21.0.0 (clang-2100.3.34.2)]
         ignore line: [Target: arm64-apple-darwin25.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_28888 -L/usr/local/lib -v CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_4b81e -L/usr/local/lib -v CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1552,10 +1567,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_28888] ==> ignore
+          arg [cmTC_4b81e] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_28888.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_4b81e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
@@ -1616,11 +1631,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/"
       - "/Users/Dylan/anaconda3/bin/"
       - "/Users/Dylan/anaconda3/condabin/"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/"
@@ -1658,9 +1673,9 @@ events:
       - "/usr/"
       - "/bin/"
       - "/sbin/"
-      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan/bin/"
-      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan/sbin/"
-      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan/"
+      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan/bin/"
+      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan/sbin/"
+      - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan/"
       - "/usr/X11R6/bin/"
       - "/usr/X11R6/sbin/"
       - "/usr/X11R6/"
@@ -1683,11 +1698,11 @@ events:
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/bin/git"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/sbin/git"
       - "/Users/Dylan/anaconda3/lib/python3.13/site-packages/git"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/bin/git"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/sbin/git"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages/git"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin/git"
-      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin/git"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/bin/git"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/sbin/git"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages/git"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin/git"
+      - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin/git"
       - "/Users/Dylan/anaconda3/bin/git"
       - "/Users/Dylan/anaconda3/condabin/git"
       - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin/git"
@@ -1705,10 +1720,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1733,7 +1748,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
@@ -1741,7 +1757,7 @@ events:
         - "/usr"
         - "/"
         - "/opt/homebrew"
-        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
@@ -1777,10 +1793,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1805,7 +1821,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
@@ -1813,7 +1830,7 @@ events:
         - "/usr"
         - "/"
         - "/opt/homebrew"
-        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
@@ -1844,8 +1861,8 @@ events:
     checks:
       - "Performing Test HAS_FLTO_THIN"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-R9XUgb"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-R9XUgb"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-bgLtl0"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-bgLtl0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1860,11 +1877,11 @@ events:
       variable: "HAS_FLTO_THIN"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-R9XUgb'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-bgLtl0'
         
-        Run Build Command(s): ninja -v cmTC_9793f
-        [1/2] /usr/bin/clang++ -DHAS_FLTO_THIN  -std=c++20 -arch arm64 -fPIE   -flto -MD -MT CMakeFiles/cmTC_9793f.dir/src.cxx.o -MF CMakeFiles/cmTC_9793f.dir/src.cxx.o.d -o CMakeFiles/cmTC_9793f.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-R9XUgb/src.cxx
-        [2/2] : && /usr/bin/clang++ -arch arm64  CMakeFiles/cmTC_9793f.dir/src.cxx.o -o cmTC_9793f  -flto && :
+        Run Build Command(s): ninja -v cmTC_368be
+        [1/2] /usr/bin/clang++ -DHAS_FLTO_THIN  -std=c++20 -arch arm64 -fPIE   -flto -MD -MT CMakeFiles/cmTC_368be.dir/src.cxx.o -MF CMakeFiles/cmTC_368be.dir/src.cxx.o.d -o CMakeFiles/cmTC_368be.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-bgLtl0/src.cxx
+        [2/2] : && /usr/bin/clang++ -arch arm64  CMakeFiles/cmTC_368be.dir/src.cxx.o -o cmTC_368be  -flto && :
         
       exitCode: 0
   -
@@ -1892,10 +1909,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1920,7 +1937,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
@@ -1928,7 +1946,7 @@ events:
         - "/usr"
         - "/"
         - "/opt/homebrew"
-        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
@@ -1966,10 +1984,10 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "/Users/Dylan/anaconda3/lib/python3.13/site-packages"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/lib/python3.13/site-packages"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/lib/python3.13/site-packages"
       ENV{PATH}:
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/overlay/bin"
-        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-7pfugf_d/normal/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/overlay/bin"
+        - "/private/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/pip-build-env-o96ptrcp/normal/bin"
         - "/Users/Dylan/anaconda3/bin"
         - "/Users/Dylan/anaconda3/condabin"
         - "/Users/Dylan/Downloads/mongosh-2.5.6-darwin-arm64/bin"
@@ -1994,7 +2012,8 @@ events:
         - "/pkg/env/global/bin"
         - "/opt/X11/bin"
         - "/Library/Apple/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
         - "/opt/homebrew"
@@ -2002,7 +2021,7 @@ events:
         - "/usr"
         - "/"
         - "/opt/homebrew"
-        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmpxq8p9het/wheel/platlib/gridplan"
+        - "/var/folders/gl/z9xfncsd6w37pc93d5dyf3rm0000gn/T/tmp3lu2ttba/wheel/platlib/gridplan"
         - "/usr/X11R6"
         - "/usr/pkg"
         - "/opt"
@@ -2092,8 +2111,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2107,16 +2126,16 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw'
         
-        Run Build Command(s): ninja -v cmTC_e7396
-        [1/2] /usr/bin/clang   -arch arm64 -fPIE   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): ninja -v cmTC_31e8d
+        [1/2] /usr/bin/clang   -arch arm64 -fPIE   -v -Wl,-v -MD -MT CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 21.0.0 (clang-2100.3.34.2)
         Target: arm64-apple-darwin25.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.0.0 (clang-2100.3.34.2) default target arm64-apple-darwin25.6.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
@@ -2129,12 +2148,12 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        [2/2] : && /usr/bin/clang -arch arm64 -v -Wl,-v CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -o cmTC_e7396   && :
+        [2/2] : && /usr/bin/clang -arch arm64 -v -Wl,-v CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -o cmTC_31e8d   && :
         Apple clang version 21.0.0 (clang-2100.3.34.2)
         Target: arm64-apple-darwin25.6.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e7396 -L/usr/local/lib -v CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_31e8d -L/usr/local/lib -v CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-27037.1
         BUILD 21:17:51 Aug 25 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -2187,16 +2206,16 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl']
+        ignore line: [Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw']
         ignore line: []
-        ignore line: [Run Build Command(s): ninja -v cmTC_e7396]
-        ignore line: [[1/2] /usr/bin/clang   -arch arm64 -fPIE   -v -Wl -v -MD -MT CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): ninja -v cmTC_31e8d]
+        ignore line: [[1/2] /usr/bin/clang   -arch arm64 -fPIE   -v -Wl -v -MD -MT CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 21.0.0 (clang-2100.3.34.2)]
         ignore line: [Target: arm64-apple-darwin25.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EfQeFl -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=27.0 -fdepfile-entry=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw -target-linker-version 1166.2 -v -fcoverage-compilation-dir=/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-TTF2zw -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.3.34.2) default target arm64-apple-darwin25.6.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
@@ -2209,12 +2228,12 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/clang -arch arm64 -v -Wl -v CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -o cmTC_e7396   && :]
+        ignore line: [[2/2] : && /usr/bin/clang -arch arm64 -v -Wl -v CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -o cmTC_31e8d   && :]
         ignore line: [Apple clang version 21.0.0 (clang-2100.3.34.2)]
         ignore line: [Target: arm64-apple-darwin25.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e7396 -L/usr/local/lib -v CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 27.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_31e8d -L/usr/local/lib -v CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -2231,10 +2250,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e7396] ==> ignore
+          arg [cmTC_31e8d] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_e7396.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_31e8d.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
@@ -2279,8 +2298,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Fv60dq"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Fv60dq"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EkrZPl"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EkrZPl"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2294,11 +2313,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Fv60dq'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EkrZPl'
         
-        Run Build Command(s): ninja -v cmTC_74f6e
-        [1/2] /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_74f6e.dir/src.c.o -MF CMakeFiles/cmTC_74f6e.dir/src.c.o.d -o CMakeFiles/cmTC_74f6e.dir/src.c.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Fv60dq/src.c
-        [2/2] : && /usr/bin/clang -arch arm64  CMakeFiles/cmTC_74f6e.dir/src.c.o -o cmTC_74f6e   && :
+        Run Build Command(s): ninja -v cmTC_8518a
+        [1/2] /usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_8518a.dir/src.c.o -MF CMakeFiles/cmTC_8518a.dir/src.c.o.d -o CMakeFiles/cmTC_8518a.dir/src.c.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EkrZPl/src.c
+        [2/2] : && /usr/bin/clang -arch arm64  CMakeFiles/cmTC_8518a.dir/src.c.o -o cmTC_8518a   && :
         
       exitCode: 0
   -
@@ -2309,8 +2328,8 @@ events:
     checks:
       - "Looking for shm_open in rt"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-6Tz4PA"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-6Tz4PA"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ZVnO2F"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ZVnO2F"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2325,13 +2344,13 @@ events:
       variable: "HAVE_LIB_RT"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-6Tz4PA'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ZVnO2F'
         
-        Run Build Command(s): ninja -v cmTC_d13a0
-        [1/2] /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=shm_open -std=c++20 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_d13a0.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_d13a0.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_d13a0.dir/CheckFunctionExists.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-6Tz4PA/CheckFunctionExists.cxx
-        [2/2] : && /usr/bin/clang++ -DCHECK_FUNCTION_EXISTS=shm_open -arch arm64  CMakeFiles/cmTC_d13a0.dir/CheckFunctionExists.cxx.o -o cmTC_d13a0  -lrt && :
-        FAILED: [code=1] cmTC_d13a0 
-        : && /usr/bin/clang++ -DCHECK_FUNCTION_EXISTS=shm_open -arch arm64  CMakeFiles/cmTC_d13a0.dir/CheckFunctionExists.cxx.o -o cmTC_d13a0  -lrt && :
+        Run Build Command(s): ninja -v cmTC_279d8
+        [1/2] /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=shm_open -std=c++20 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_279d8.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_279d8.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_279d8.dir/CheckFunctionExists.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ZVnO2F/CheckFunctionExists.cxx
+        [2/2] : && /usr/bin/clang++ -DCHECK_FUNCTION_EXISTS=shm_open -arch arm64  CMakeFiles/cmTC_279d8.dir/CheckFunctionExists.cxx.o -o cmTC_279d8  -lrt && :
+        FAILED: [code=1] cmTC_279d8 
+        : && /usr/bin/clang++ -DCHECK_FUNCTION_EXISTS=shm_open -arch arm64  CMakeFiles/cmTC_279d8.dir/CheckFunctionExists.cxx.o -o cmTC_279d8  -lrt && :
         ld: library 'rt' not found
         clang++: error: linker command failed with exit code 1 (use -v to see invocation)
         ninja: build stopped: subcommand failed.
@@ -2348,8 +2367,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WALL"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-vWprf3"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-vWprf3"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-39Sjhs"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-39Sjhs"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2364,11 +2383,11 @@ events:
       variable: "HAVE_CXX_FLAG_WALL"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-vWprf3'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-39Sjhs'
         
-        Run Build Command(s): ninja -v cmTC_1228b
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++17 -arch arm64 -fPIE   -Wall -MD -MT CMakeFiles/cmTC_1228b.dir/src.cxx.o -MF CMakeFiles/cmTC_1228b.dir/src.cxx.o.d -o CMakeFiles/cmTC_1228b.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-vWprf3/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall -arch arm64  CMakeFiles/cmTC_1228b.dir/src.cxx.o -o cmTC_1228b   && :
+        Run Build Command(s): ninja -v cmTC_69d7d
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WALL  -Wall -std=c++17 -arch arm64 -fPIE   -Wall -MD -MT CMakeFiles/cmTC_69d7d.dir/src.cxx.o -MF CMakeFiles/cmTC_69d7d.dir/src.cxx.o.d -o CMakeFiles/cmTC_69d7d.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-39Sjhs/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall -arch arm64  CMakeFiles/cmTC_69d7d.dir/src.cxx.o -o cmTC_69d7d   && :
         
       exitCode: 0
   -
@@ -2382,8 +2401,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WEXTRA"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-w49N3u"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-w49N3u"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-tEwJnS"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-tEwJnS"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2398,11 +2417,11 @@ events:
       variable: "HAVE_CXX_FLAG_WEXTRA"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-w49N3u'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-tEwJnS'
         
-        Run Build Command(s): ninja -v cmTC_577ba
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++17 -arch arm64 -fPIE   -Wextra -MD -MT CMakeFiles/cmTC_577ba.dir/src.cxx.o -MF CMakeFiles/cmTC_577ba.dir/src.cxx.o.d -o CMakeFiles/cmTC_577ba.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-w49N3u/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra -arch arm64  CMakeFiles/cmTC_577ba.dir/src.cxx.o -o cmTC_577ba   && :
+        Run Build Command(s): ninja -v cmTC_1e019
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WEXTRA  -Wall  -Wextra -std=c++17 -arch arm64 -fPIE   -Wextra -MD -MT CMakeFiles/cmTC_1e019.dir/src.cxx.o -MF CMakeFiles/cmTC_1e019.dir/src.cxx.o.d -o CMakeFiles/cmTC_1e019.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-tEwJnS/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra -arch arm64  CMakeFiles/cmTC_1e019.dir/src.cxx.o -o cmTC_1e019   && :
         
       exitCode: 0
   -
@@ -2416,8 +2435,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSHADOW"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-eu1EHY"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-eu1EHY"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-BwmKSB"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-BwmKSB"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2432,11 +2451,11 @@ events:
       variable: "HAVE_CXX_FLAG_WSHADOW"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-eu1EHY'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-BwmKSB'
         
-        Run Build Command(s): ninja -v cmTC_7cdd1
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++17 -arch arm64 -fPIE   -Wshadow -MD -MT CMakeFiles/cmTC_7cdd1.dir/src.cxx.o -MF CMakeFiles/cmTC_7cdd1.dir/src.cxx.o.d -o CMakeFiles/cmTC_7cdd1.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-eu1EHY/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow -arch arm64  CMakeFiles/cmTC_7cdd1.dir/src.cxx.o -o cmTC_7cdd1   && :
+        Run Build Command(s): ninja -v cmTC_10abb
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSHADOW  -Wall  -Wextra  -Wshadow -std=c++17 -arch arm64 -fPIE   -Wshadow -MD -MT CMakeFiles/cmTC_10abb.dir/src.cxx.o -MF CMakeFiles/cmTC_10abb.dir/src.cxx.o.d -o CMakeFiles/cmTC_10abb.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-BwmKSB/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow -arch arm64  CMakeFiles/cmTC_10abb.dir/src.cxx.o -o cmTC_10abb   && :
         
       exitCode: 0
   -
@@ -2450,8 +2469,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-m4wYqx"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-m4wYqx"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-P7j4QI"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-P7j4QI"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2466,11 +2485,11 @@ events:
       variable: "HAVE_CXX_FLAG_WFLOAT_EQUAL"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-m4wYqx'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-P7j4QI'
         
-        Run Build Command(s): ninja -v cmTC_672b4
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++17 -arch arm64 -fPIE   -Wfloat-equal -MD -MT CMakeFiles/cmTC_672b4.dir/src.cxx.o -MF CMakeFiles/cmTC_672b4.dir/src.cxx.o.d -o CMakeFiles/cmTC_672b4.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-m4wYqx/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal -arch arm64  CMakeFiles/cmTC_672b4.dir/src.cxx.o -o cmTC_672b4   && :
+        Run Build Command(s): ninja -v cmTC_e1e0b
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wall  -Wextra  -Wshadow  -Wfloat-equal -std=c++17 -arch arm64 -fPIE   -Wfloat-equal -MD -MT CMakeFiles/cmTC_e1e0b.dir/src.cxx.o -MF CMakeFiles/cmTC_e1e0b.dir/src.cxx.o.d -o CMakeFiles/cmTC_e1e0b.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-P7j4QI/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal -arch arm64  CMakeFiles/cmTC_e1e0b.dir/src.cxx.o -o cmTC_e1e0b   && :
         
       exitCode: 0
   -
@@ -2484,8 +2503,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-hszlGt"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-hszlGt"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-YoUS7q"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-YoUS7q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2500,11 +2519,11 @@ events:
       variable: "HAVE_CXX_FLAG_WOLD_STYLE_CAST"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-hszlGt'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-YoUS7q'
         
-        Run Build Command(s): ninja -v cmTC_122cc
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++17 -arch arm64 -fPIE   -Wold-style-cast -MD -MT CMakeFiles/cmTC_122cc.dir/src.cxx.o -MF CMakeFiles/cmTC_122cc.dir/src.cxx.o.d -o CMakeFiles/cmTC_122cc.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-hszlGt/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -arch arm64  CMakeFiles/cmTC_122cc.dir/src.cxx.o -o cmTC_122cc   && :
+        Run Build Command(s): ninja -v cmTC_53d8f
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WOLD_STYLE_CAST  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -std=c++17 -arch arm64 -fPIE   -Wold-style-cast -MD -MT CMakeFiles/cmTC_53d8f.dir/src.cxx.o -MF CMakeFiles/cmTC_53d8f.dir/src.cxx.o.d -o CMakeFiles/cmTC_53d8f.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-YoUS7q/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast -arch arm64  CMakeFiles/cmTC_53d8f.dir/src.cxx.o -o cmTC_53d8f   && :
         
       exitCode: 0
   -
@@ -2518,8 +2537,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-4AowJG"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-4AowJG"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-DnbwOp"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-DnbwOp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2534,11 +2553,11 @@ events:
       variable: "HAVE_CXX_FLAG_WCONVERSION"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-4AowJG'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-DnbwOp'
         
-        Run Build Command(s): ninja -v cmTC_1e750
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++17 -arch arm64 -fPIE   -Wconversion -MD -MT CMakeFiles/cmTC_1e750.dir/src.cxx.o -MF CMakeFiles/cmTC_1e750.dir/src.cxx.o.d -o CMakeFiles/cmTC_1e750.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-4AowJG/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -arch arm64  CMakeFiles/cmTC_1e750.dir/src.cxx.o -o cmTC_1e750   && :
+        Run Build Command(s): ninja -v cmTC_ebaf2
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WCONVERSION  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -std=c++17 -arch arm64 -fPIE   -Wconversion -MD -MT CMakeFiles/cmTC_ebaf2.dir/src.cxx.o -MF CMakeFiles/cmTC_ebaf2.dir/src.cxx.o.d -o CMakeFiles/cmTC_ebaf2.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-DnbwOp/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion -arch arm64  CMakeFiles/cmTC_ebaf2.dir/src.cxx.o -o cmTC_ebaf2   && :
         
       exitCode: 0
   -
@@ -2552,8 +2571,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WERROR"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-QA1cjf"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-QA1cjf"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-GtLfWz"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-GtLfWz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2568,11 +2587,11 @@ events:
       variable: "HAVE_CXX_FLAG_WERROR"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-QA1cjf'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-GtLfWz'
         
-        Run Build Command(s): ninja -v cmTC_21fa7
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++17 -arch arm64 -fPIE   -Werror -MD -MT CMakeFiles/cmTC_21fa7.dir/src.cxx.o -MF CMakeFiles/cmTC_21fa7.dir/src.cxx.o.d -o CMakeFiles/cmTC_21fa7.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-QA1cjf/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -arch arm64  CMakeFiles/cmTC_21fa7.dir/src.cxx.o -o cmTC_21fa7   && :
+        Run Build Command(s): ninja -v cmTC_25226
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WERROR  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -std=c++17 -arch arm64 -fPIE   -Werror -MD -MT CMakeFiles/cmTC_25226.dir/src.cxx.o -MF CMakeFiles/cmTC_25226.dir/src.cxx.o.d -o CMakeFiles/cmTC_25226.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-GtLfWz/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror -arch arm64  CMakeFiles/cmTC_25226.dir/src.cxx.o -o cmTC_25226   && :
         
       exitCode: 0
   -
@@ -2586,8 +2605,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SEoziZ"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SEoziZ"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-9Eq2vP"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-9Eq2vP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2602,11 +2621,11 @@ events:
       variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SEoziZ'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-9Eq2vP'
         
-        Run Build Command(s): ninja -v cmTC_111f6
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -std=c++17 -arch arm64 -fPIE   -Wsuggest-override -MD -MT CMakeFiles/cmTC_111f6.dir/src.cxx.o -MF CMakeFiles/cmTC_111f6.dir/src.cxx.o.d -o CMakeFiles/cmTC_111f6.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SEoziZ/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -arch arm64  CMakeFiles/cmTC_111f6.dir/src.cxx.o -o cmTC_111f6   && :
+        Run Build Command(s): ninja -v cmTC_37e36
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -std=c++17 -arch arm64 -fPIE   -Wsuggest-override -MD -MT CMakeFiles/cmTC_37e36.dir/src.cxx.o -MF CMakeFiles/cmTC_37e36.dir/src.cxx.o.d -o CMakeFiles/cmTC_37e36.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-9Eq2vP/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override -arch arm64  CMakeFiles/cmTC_37e36.dir/src.cxx.o -o cmTC_37e36   && :
         
       exitCode: 0
   -
@@ -2620,8 +2639,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-qqU4Qr"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-qqU4Qr"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-u0LlBk"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-u0LlBk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2636,11 +2655,11 @@ events:
       variable: "HAVE_CXX_FLAG_PEDANTIC"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-qqU4Qr'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-u0LlBk'
         
-        Run Build Command(s): ninja -v cmTC_cf563
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -std=c++17 -arch arm64 -fPIE   -pedantic -MD -MT CMakeFiles/cmTC_cf563.dir/src.cxx.o -MF CMakeFiles/cmTC_cf563.dir/src.cxx.o.d -o CMakeFiles/cmTC_cf563.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-qqU4Qr/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -arch arm64  CMakeFiles/cmTC_cf563.dir/src.cxx.o -o cmTC_cf563   && :
+        Run Build Command(s): ninja -v cmTC_8801a
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_PEDANTIC  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -std=c++17 -arch arm64 -fPIE   -pedantic -MD -MT CMakeFiles/cmTC_8801a.dir/src.cxx.o -MF CMakeFiles/cmTC_8801a.dir/src.cxx.o.d -o CMakeFiles/cmTC_8801a.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-u0LlBk/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic -arch arm64  CMakeFiles/cmTC_8801a.dir/src.cxx.o -o cmTC_8801a   && :
         
       exitCode: 0
   -
@@ -2654,8 +2673,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SfjGnU"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SfjGnU"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-gft6nv"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-gft6nv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2670,11 +2689,11 @@ events:
       variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SfjGnU'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-gft6nv'
         
-        Run Build Command(s): ninja -v cmTC_bb3be
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++17 -arch arm64 -fPIE   -pedantic-errors -MD -MT CMakeFiles/cmTC_bb3be.dir/src.cxx.o -MF CMakeFiles/cmTC_bb3be.dir/src.cxx.o.d -o CMakeFiles/cmTC_bb3be.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-SfjGnU/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -arch arm64  CMakeFiles/cmTC_bb3be.dir/src.cxx.o -o cmTC_bb3be   && :
+        Run Build Command(s): ninja -v cmTC_cc446
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++17 -arch arm64 -fPIE   -pedantic-errors -MD -MT CMakeFiles/cmTC_cc446.dir/src.cxx.o -MF CMakeFiles/cmTC_cc446.dir/src.cxx.o.d -o CMakeFiles/cmTC_cc446.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-gft6nv/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors -arch arm64  CMakeFiles/cmTC_cc446.dir/src.cxx.o -o cmTC_cc446   && :
         
       exitCode: 0
   -
@@ -2688,8 +2707,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EBPFuL"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EBPFuL"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ToGPiH"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ToGPiH"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2704,11 +2723,11 @@ events:
       variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EBPFuL'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ToGPiH'
         
-        Run Build Command(s): ninja -v cmTC_162bb
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++17 -arch arm64 -fPIE   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_162bb.dir/src.cxx.o -MF CMakeFiles/cmTC_162bb.dir/src.cxx.o.d -o CMakeFiles/cmTC_162bb.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-EBPFuL/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -arch arm64  CMakeFiles/cmTC_162bb.dir/src.cxx.o -o cmTC_162bb   && :
+        Run Build Command(s): ninja -v cmTC_f6045
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++17 -arch arm64 -fPIE   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_f6045.dir/src.cxx.o -MF CMakeFiles/cmTC_f6045.dir/src.cxx.o.d -o CMakeFiles/cmTC_f6045.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-ToGPiH/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -arch arm64  CMakeFiles/cmTC_f6045.dir/src.cxx.o -o cmTC_f6045   && :
         
       exitCode: 0
   -
@@ -2722,8 +2741,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Td8dD8"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Td8dD8"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oeZdE1"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oeZdE1"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2738,11 +2757,11 @@ events:
       variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Td8dD8'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oeZdE1'
         
-        Run Build Command(s): ninja -v cmTC_e7b1c
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -std=c++17 -arch arm64 -fPIE   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_e7b1c.dir/src.cxx.o -MF CMakeFiles/cmTC_e7b1c.dir/src.cxx.o.d -o CMakeFiles/cmTC_e7b1c.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Td8dD8/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -arch arm64  CMakeFiles/cmTC_e7b1c.dir/src.cxx.o -o cmTC_e7b1c   && :
+        Run Build Command(s): ninja -v cmTC_10b95
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -std=c++17 -arch arm64 -fPIE   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_10b95.dir/src.cxx.o -MF CMakeFiles/cmTC_10b95.dir/src.cxx.o.d -o CMakeFiles/cmTC_10b95.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oeZdE1/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -arch arm64  CMakeFiles/cmTC_10b95.dir/src.cxx.o -o cmTC_10b95   && :
         
       exitCode: 0
   -
@@ -2756,8 +2775,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HSznZH"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HSznZH"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-OpkkEQ"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-OpkkEQ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2772,11 +2791,11 @@ events:
       variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HSznZH'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-OpkkEQ'
         
-        Run Build Command(s): ninja -v cmTC_2d35e
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17 -arch arm64 -fPIE   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_2d35e.dir/src.cxx.o -MF CMakeFiles/cmTC_2d35e.dir/src.cxx.o.d -o CMakeFiles/cmTC_2d35e.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-HSznZH/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -arch arm64  CMakeFiles/cmTC_2d35e.dir/src.cxx.o -o cmTC_2d35e   && :
+        Run Build Command(s): ninja -v cmTC_3bf28
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17 -arch arm64 -fPIE   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_3bf28.dir/src.cxx.o -MF CMakeFiles/cmTC_3bf28.dir/src.cxx.o.d -o CMakeFiles/cmTC_3bf28.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-OpkkEQ/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -arch arm64  CMakeFiles/cmTC_3bf28.dir/src.cxx.o -o cmTC_3bf28   && :
         
       exitCode: 0
   -
@@ -2790,8 +2809,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-lotr3U"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-lotr3U"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Jb8kbh"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Jb8kbh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2806,11 +2825,11 @@ events:
       variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-lotr3U'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Jb8kbh'
         
-        Run Build Command(s): ninja -v cmTC_f63d8
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17 -arch arm64 -fPIE   -Wno-deprecated -MD -MT CMakeFiles/cmTC_f63d8.dir/src.cxx.o -MF CMakeFiles/cmTC_f63d8.dir/src.cxx.o.d -o CMakeFiles/cmTC_f63d8.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-lotr3U/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -arch arm64  CMakeFiles/cmTC_f63d8.dir/src.cxx.o -o cmTC_f63d8   && :
+        Run Build Command(s): ninja -v cmTC_99583
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17 -arch arm64 -fPIE   -Wno-deprecated -MD -MT CMakeFiles/cmTC_99583.dir/src.cxx.o -MF CMakeFiles/cmTC_99583.dir/src.cxx.o.d -o CMakeFiles/cmTC_99583.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-Jb8kbh/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -arch arm64  CMakeFiles/cmTC_99583.dir/src.cxx.o -o cmTC_99583   && :
         
       exitCode: 0
   -
@@ -2824,8 +2843,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-STNlfg"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-STNlfg"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-nSgNmR"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-nSgNmR"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2840,11 +2859,11 @@ events:
       variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-STNlfg'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-nSgNmR'
         
-        Run Build Command(s): ninja -v cmTC_73740
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++17 -arch arm64 -fPIE   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_73740.dir/src.cxx.o -MF CMakeFiles/cmTC_73740.dir/src.cxx.o.d -o CMakeFiles/cmTC_73740.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-STNlfg/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -arch arm64  CMakeFiles/cmTC_73740.dir/src.cxx.o -o cmTC_73740   && :
+        Run Build Command(s): ninja -v cmTC_910b7
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -std=c++17 -arch arm64 -fPIE   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_910b7.dir/src.cxx.o -MF CMakeFiles/cmTC_910b7.dir/src.cxx.o.d -o CMakeFiles/cmTC_910b7.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-nSgNmR/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing -arch arm64  CMakeFiles/cmTC_910b7.dir/src.cxx.o -o cmTC_910b7   && :
         
       exitCode: 0
   -
@@ -2858,8 +2877,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WD654"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-NAGt5U"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-NAGt5U"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-jqEbIN"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-jqEbIN"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2874,12 +2893,12 @@ events:
       variable: "HAVE_CXX_FLAG_WD654"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-NAGt5U'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-jqEbIN'
         
-        Run Build Command(s): ninja -v cmTC_60692
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17 -arch arm64 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_60692.dir/src.cxx.o -MF CMakeFiles/cmTC_60692.dir/src.cxx.o.d -o CMakeFiles/cmTC_60692.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-NAGt5U/src.cxx
-        FAILED: [code=1] CMakeFiles/cmTC_60692.dir/src.cxx.o 
-        /usr/bin/clang++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17 -arch arm64 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_60692.dir/src.cxx.o -MF CMakeFiles/cmTC_60692.dir/src.cxx.o.d -o CMakeFiles/cmTC_60692.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-NAGt5U/src.cxx
+        Run Build Command(s): ninja -v cmTC_27646
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17 -arch arm64 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_27646.dir/src.cxx.o -MF CMakeFiles/cmTC_27646.dir/src.cxx.o.d -o CMakeFiles/cmTC_27646.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-jqEbIN/src.cxx
+        FAILED: [code=1] CMakeFiles/cmTC_27646.dir/src.cxx.o 
+        /usr/bin/clang++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -wd654 -std=c++17 -arch arm64 -fPIE   -wd654 -MD -MT CMakeFiles/cmTC_27646.dir/src.cxx.o -MF CMakeFiles/cmTC_27646.dir/src.cxx.o.d -o CMakeFiles/cmTC_27646.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-jqEbIN/src.cxx
         clang++: error: unknown argument: '-wd654'
         clang++: error: unknown argument: '-wd654'
         ninja: build stopped: subcommand failed.
@@ -2896,8 +2915,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oXTolE"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oXTolE"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-35c6be"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-35c6be"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2912,11 +2931,11 @@ events:
       variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oXTolE'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-35c6be'
         
-        Run Build Command(s): ninja -v cmTC_b77a0
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++17 -arch arm64 -fPIE   -Wthread-safety -MD -MT CMakeFiles/cmTC_b77a0.dir/src.cxx.o -MF CMakeFiles/cmTC_b77a0.dir/src.cxx.o.d -o CMakeFiles/cmTC_b77a0.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-oXTolE/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -arch arm64  CMakeFiles/cmTC_b77a0.dir/src.cxx.o -o cmTC_b77a0   && :
+        Run Build Command(s): ninja -v cmTC_551c5
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -std=c++17 -arch arm64 -fPIE   -Wthread-safety -MD -MT CMakeFiles/cmTC_551c5.dir/src.cxx.o -MF CMakeFiles/cmTC_551c5.dir/src.cxx.o.d -o CMakeFiles/cmTC_551c5.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-35c6be/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -arch arm64  CMakeFiles/cmTC_551c5.dir/src.cxx.o -o cmTC_551c5   && :
         
       exitCode: 0
   -
@@ -2943,9 +2962,9 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_c01a3
-        [1/2] /usr/bin/clang++  -I/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/include -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_c01a3.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_c01a3.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_c01a3.dir/thread_safety_attributes.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/thread_safety_attributes.cpp
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_c01a3.dir/thread_safety_attributes.cpp.o -o cmTC_c01a3   && :
+        Run Build Command(s): ninja -v cmTC_0c177
+        [1/2] /usr/bin/clang++  -I/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/include -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_0c177.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_0c177.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_0c177.dir/thread_safety_attributes.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/thread_safety_attributes.cpp
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_0c177.dir/thread_safety_attributes.cpp.o -o cmTC_0c177   && :
         
       exitCode: 0
     runResult:
@@ -2964,8 +2983,8 @@ events:
     checks:
       - "Performing Test HAVE_CXX_FLAG_COVERAGE"
     directories:
-      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-M5MDJ7"
-      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-M5MDJ7"
+      source: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-RKJD1d"
+      binary: "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-RKJD1d"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2980,11 +2999,11 @@ events:
       variable: "HAVE_CXX_FLAG_COVERAGE"
       cached: true
       stdout: |
-        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-M5MDJ7'
+        Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-RKJD1d'
         
-        Run Build Command(s): ninja -v cmTC_d7452
-        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++17 -arch arm64 -fPIE   --coverage -MD -MT CMakeFiles/cmTC_d7452.dir/src.cxx.o -MF CMakeFiles/cmTC_d7452.dir/src.cxx.o.d -o CMakeFiles/cmTC_d7452.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-M5MDJ7/src.cxx
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -arch arm64  CMakeFiles/cmTC_d7452.dir/src.cxx.o -o cmTC_d7452   && :
+        Run Build Command(s): ninja -v cmTC_f75ad
+        [1/2] /usr/bin/clang++ -DHAVE_CXX_FLAG_COVERAGE  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++17 -arch arm64 -fPIE   --coverage -MD -MT CMakeFiles/cmTC_f75ad.dir/src.cxx.o -MF CMakeFiles/cmTC_f75ad.dir/src.cxx.o.d -o CMakeFiles/cmTC_f75ad.dir/src.cxx.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeScratch/TryCompile-RKJD1d/src.cxx
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  --coverage -arch arm64  CMakeFiles/cmTC_f75ad.dir/src.cxx.o -o cmTC_f75ad   && :
         
       exitCode: 0
   -
@@ -3011,9 +3030,9 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_1f9fd
-        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_1f9fd.dir/std_regex.cpp.o -MF CMakeFiles/cmTC_1f9fd.dir/std_regex.cpp.o.d -o CMakeFiles/cmTC_1f9fd.dir/std_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/std_regex.cpp
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_1f9fd.dir/std_regex.cpp.o -o cmTC_1f9fd   && :
+        Run Build Command(s): ninja -v cmTC_fc98a
+        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_fc98a.dir/std_regex.cpp.o -MF CMakeFiles/cmTC_fc98a.dir/std_regex.cpp.o.d -o CMakeFiles/cmTC_fc98a.dir/std_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/std_regex.cpp
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_fc98a.dir/std_regex.cpp.o -o cmTC_fc98a   && :
         
       exitCode: 0
     runResult:
@@ -3045,10 +3064,10 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_dea06
-        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
-        FAILED: [code=1] CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o 
-        /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_dea06.dir/gnu_posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
+        Run Build Command(s): ninja -v cmTC_58573
+        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o 
+        /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_58573.dir/gnu_posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp
         /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/gnu_posix_regex.cpp:1:10: fatal error: 'gnuregex.h' file not found
             1 | #include <gnuregex.h>
               |          ^~~~~~~~~~~~
@@ -3083,9 +3102,9 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_bde49
-        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_bde49.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_bde49.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_bde49.dir/posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/posix_regex.cpp
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_bde49.dir/posix_regex.cpp.o -o cmTC_bde49   && :
+        Run Build Command(s): ninja -v cmTC_0d61c
+        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_0d61c.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_0d61c.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_0d61c.dir/posix_regex.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/posix_regex.cpp
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_0d61c.dir/posix_regex.cpp.o -o cmTC_0d61c   && :
         
       exitCode: 0
     runResult:
@@ -3117,9 +3136,9 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_bf4b6
-        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_bf4b6.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_bf4b6.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_bf4b6.dir/steady_clock.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/steady_clock.cpp
-        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_bf4b6.dir/steady_clock.cpp.o -o cmTC_bf4b6   && :
+        Run Build Command(s): ninja -v cmTC_73a4e
+        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_73a4e.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_73a4e.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_73a4e.dir/steady_clock.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/steady_clock.cpp
+        [2/2] : && /usr/bin/clang++ -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -arch arm64  CMakeFiles/cmTC_73a4e.dir/steady_clock.cpp.o -o cmTC_73a4e   && :
         
       exitCode: 0
     runResult:
@@ -3151,10 +3170,10 @@ events:
       stdout: |
         Change Dir: '/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/CMakeFiles/CMakeTmp'
         
-        Run Build Command(s): ninja -v cmTC_e615b
-        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
-        FAILED: [code=1] CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o 
-        /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_e615b.dir/pthread_affinity.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
+        Run Build Command(s): ninja -v cmTC_a973d
+        [1/2] /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o 
+        /usr/bin/clang++   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety  -std=c++11 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o -MF CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o.d -o CMakeFiles/cmTC_a973d.dir/pthread_affinity.cpp.o -c /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp
         /Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/cmake/pthread_affinity.cpp:3:3: error: unknown type name 'cpu_set_t'
             3 |   cpu_set_t set;
               |   ^

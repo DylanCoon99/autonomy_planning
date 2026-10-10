@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test_planners"
+			"path" : "bench_planners"
 		}
 	],
 	"backtrace" : 1,
@@ -16,7 +16,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/CMakeLists.txt"
+			"build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/src/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 57,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 58,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
@@ -41,7 +41,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 153,
+				"line" : 83,
 				"parent" : 3
 			}
 		]
@@ -59,7 +59,7 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "benchmark_main::@a5e768fe43450e220d4b"
 		}
 	],
 	"compileGroups" : 
@@ -71,6 +71,13 @@
 					"fragment" : "-O3 -DNDEBUG -std=c++20 -arch arm64 -fPIE"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "BENCHMARK_STATIC_DEFINE"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -79,13 +86,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googletest-src/googletest"
+					"path" : "/Users/Dylan/Documents/autonomy_planning/gridplan/build/cp313-cp313-macosx_26_0_arm64/_deps/googlebenchmark-src/include"
 				}
 			],
 			"language" : "CXX",
@@ -93,7 +94,6 @@
 			{
 				"backtraces" : 
 				[
-					2,
 					2
 				],
 				"standard" : "20"
@@ -108,18 +108,18 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "benchmark::@a5e768fe43450e220d4b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "benchmark_main::@a5e768fe43450e220d4b"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "gridplan_core::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "test_planners::@6890427a1f51a3e7e1df",
+	"id" : "bench_planners::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -139,12 +139,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "lib/libgtest_main.a",
+				"fragment" : "_deps/googlebenchmark-build/src/libbenchmark_main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "lib/libgtest.a",
+				"fragment" : "_deps/googlebenchmark-build/src/libbenchmark.a",
 				"role" : "libraries"
 			}
 		],
@@ -158,11 +158,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"id" : "benchmark_main::@a5e768fe43450e220d4b"
 		}
 	],
-	"name" : "test_planners",
-	"nameOnDisk" : "test_planners",
+	"name" : "bench_planners",
+	"nameOnDisk" : "bench_planners",
 	"paths" : 
 	{
 		"build" : ".",
@@ -183,7 +183,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp/tests/test_planners.cpp",
+			"path" : "cpp/bench/bench_planners.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

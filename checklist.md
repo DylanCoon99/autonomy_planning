@@ -86,11 +86,11 @@
 
 ## Day 6: Bindings and Cross-Validation
 
-- [ ] Bind grid construction accepting `py::array_t<uint8_t>`
-- [ ] Bind all planners, `PlannerConfig`, and `PlanResult`
-- [ ] Expose result path and expansion order as NumPy arrays
-- [ ] Release GIL during search with `py::gil_scoped_release`
-- [ ] Measure search time inside C++ and end-to-end from Python
+- [x] Bind grid construction accepting `py::array_t<uint8_t>`
+- [x] Bind all planners, `PlannerConfig`, and `PlanResult`
+- [x] Expose result path and expansion order as NumPy arrays
+- [x] Release GIL during search with `py::gil_scoped_release`
+- [x] Measure search time inside C++ and end-to-end from Python
 - [ ] Write pytest binding tests:
   - [ ] Incorrect dtypes raise clear exceptions
   - [ ] Non-contiguous arrays handled or rejected

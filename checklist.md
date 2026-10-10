@@ -95,9 +95,9 @@
   - [x] Incorrect dtypes raise clear exceptions
   - [x] Non-contiguous arrays handled or rejected
   - [x] Wrong dimensionality raises clear exceptions
-- [ ] Write cross-validation suite:
-  - [ ] C++ Dijkstra cost matches Python reference across hundreds of random seeds
-  - [ ] C++ A* cost matches Python reference across hundreds of random seeds
+- [x] Write cross-validation suite:
+  - [x] C++ Dijkstra cost matches Python reference across hundreds of random seeds
+  - [x] C++ A* cost matches Python reference across hundreds of random seeds
   - [ ] Test both 2D and 3D grids
 
 ---

@@ -143,9 +143,4 @@ plan_and_render_3d(shape=(16, 16, 16), density=0.1, seed=42, save_path="viz3d_pa
 - Weighted A* paths tend to be more direct but may take suboptimal corridors
 - These geometric artifacts motivate the trajectory smoothing in Project 3 (trajectory generation)
 
-## References
 
-- Hart, Nilsson, and Raphael (1968), *A Formal Basis for the Heuristic Determination of Minimum Cost Paths*
-- LaValle, *Planning Algorithms* (Cambridge University Press, 2006), Chapter 2
-- Amit Patel, *Red Blob Games* — A* and grid heuristics
-- Nash, Daniel, Koenig, and Felner (2007), *Theta*: Any-Angle Path Planning on Grids*
